@@ -120,70 +120,73 @@
   }
 }
 
+/* --- PÜRÜZSÜZ AKAN F1 YÜKLENİYOR ALANI --- */
+
 .track-loading-container {
   position: relative;
   width: 100%;
   max-width: 320px;
-  height: 80px; /* Yüksekliği biraz daralttık, böylece boşluk azaldı */
-  margin: 0 auto 24px;
+  height: 70px;
+  margin: 0 auto 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end; /* İçindekileri en alta yaslar */
+  justify-content: flex-end;
   overflow: hidden;
 }
 
-/* F1 Aracı - Pist Üzerinde */
+/* F1 Aracı - Çok Hafif Mikro Süspansiyon Titreşimli */
 .f1-car-track {
   position: relative;
   width: 140px;
   height: auto;
   color: var(--accent);
   z-index: 3;
-  margin-bottom: -4px; /* Tekerlekleri çizgiye sıfırlar/hafifçe gömer */
-  animation: carVibration 0.25s infinite linear;
+  margin-bottom: -5px; /* Tekerlekleri asfalta sıfırlar */
+  filter: none;
+  /* Çooook hafif mikro zıplama (-0.3px) */
+  animation: f1MicroBounce 0.22s infinite alternate ease-in-out;
 }
 
-/* Asfalt Yol Efekti */
+/* Asfalt Taban Çizgisi */
 .track-road {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 2px;
   background-color: rgba(255, 255, 255, 0.1);
   z-index: 1;
 }
 
-/* Kayarak Hız/Loading Vibeı Veren Çizgiler */
+/* Sakin Akan Yol Çizgileri */
 .track-lines {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 200%;
-  height: 3px;
+  height: 2px;
   background-image: linear-gradient(
     90deg, 
-    var(--accent) 0%, var(--accent) 40%, 
+    rgba(227, 6, 19, 0.5) 0%, rgba(227, 6, 19, 0.5) 40%, 
     transparent 40%, transparent 100%
   );
-  background-size: 60px 100%;
+  background-size: 70px 100%;
   z-index: 2;
-  animation: trackLoading 0.6s infinite linear;
+  animation: trackSlowFlow 1.2s infinite linear;
 }
 
-/* --- ANİMASYONLAR --- */
+/* ── ANİMASYONLAR ── */
 
-/* Yol çizgilerinin kayması (Loading Efekti) */
-@keyframes carVibration {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-1px); }
+/* Gözü rahatsız etmeyen mikron düzeyde dikey süspansiyon hareketi */
+@keyframes f1MicroBounce {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-0.3px); }
 }
 
-/* Yol kayma efekti */
-@keyframes trackLoading {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-60px); }
+@keyframes trackSlowFlow {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-70px); }
 }
 
 /* Brackets */
