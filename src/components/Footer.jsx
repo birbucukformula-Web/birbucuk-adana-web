@@ -8,9 +8,9 @@ const base = import.meta.env.BASE_URL
 // ─── SOSYAL MEDYA LİNKLERİ ───────────────────────────────────────────────────
 const socials = [
   { name: 'Instagram', href: 'https://www.instagram.com/1.5adanaformula/',          icon: `${base}images/Instagram_icon.png` },
-  { name: 'LinkedIn',  href: 'https://www.linkedin.com/company/1.5adanaformulasae/', icon: `${base}images/Linkedin_icon.png`  },
+  { name: 'LinkedIn',  href: 'https://www.linkedin.com/company/birbucukadanaformula/', icon: `${base}images/Linkedin_icon.png`  },
   { name: 'YouTube',   href: 'https://www.youtube.com/@1.5adanaformula',             icon: `${base}images/Youtube_icon.png`   },
-  { name: 'TikTok',    href: 'https://www.tiktok.com/1.5adanaformula',               icon: `${base}images/tiktok-icon.png`    },
+  { name: 'TikTok',    href: 'https://www.tiktok.com/@1.5adanaformula',               icon: `${base}images/tiktok-icon.png`    },
 ]
 
 // ─── HIZLI SAYFALAR ──────────────────────────────────────────────────────────

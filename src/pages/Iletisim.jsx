@@ -16,7 +16,7 @@ const socials = [
   {
     name: 'LinkedIn',
     handle: '1.5 Adana Formula Student', /* EDIT */
-    href: '#', /* EDIT: LinkedIn URL */
+    href: 'https://www.linkedin.com/company/birbucukadanaformula/',
     color: '#0077B5',
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
