@@ -31,7 +31,7 @@ export default function Footer() {
         {/* ── MARKA / LOGO ────────────────────────────────────────────────── */}
         <div className="footer-brand">
           <img
-            src={`${base}images/team-logo.png`}
+            src={`${base}images/kırmızı_beyaz.png`}
             alt="Team Logo"
             style={{ height: '80px', width: 'auto', marginBottom: '16px' }}
           />
