@@ -6,9 +6,18 @@ const base = import.meta.env.BASE_URL
 
 const tiers = [
   {
+    label: 'ANA SPONSORLAR',
+    icon: '💎',
+    cls: 'tier-main',
+    sponsors: [
+      { name: 'Emre Makina', logo: `${base}images/sponsor-images/emremak-güncel.png`, href: 'https://www.emremakinasan.com.tr/' },
+      { name: 'Bomak',       logo: `${base}images/sponsor-images/bomak.png`,          href: 'https://bomak.com.tr/' },
+    ],
+  },
+  {
     label: 'ALTIN SPONSORLAR',
     icon: '🥇',
-    cls: 'tier-main',
+    cls: 'tier-gold',
     sponsors: [
       { name: 'Avioni',    logo: `${base}images/sponsor-images/avioni_logo.png`, href: 'https://avionitech.com//' },
       { name: 'OnPlus',    logo: `${base}images/sponsor-images/onplus-sitelogo.png`, href: 'https://www.onplus.com.tr/' },
