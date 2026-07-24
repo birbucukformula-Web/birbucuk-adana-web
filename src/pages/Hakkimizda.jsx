@@ -49,7 +49,7 @@ export default function Hakkimizda() {
           <div className="story-img reveal reveal-delay-2">
             {/* Takım Çalışma Anı Görseli */}
             <img
-              src={`${import.meta.env.BASE_URL}images/formula_students.jpg`}
+              src={`${import.meta.env.BASE_URL}images\\hakkimizda-images\\biz-kimiz.JPG`}
               alt="Takım çalışma anı"
               onError={e => { e.target.parentElement.classList.add('img-placeholder') }}
             />
