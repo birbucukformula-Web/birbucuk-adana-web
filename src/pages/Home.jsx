@@ -12,7 +12,7 @@ const captains = [
 const stats = [
   { value: '2023', label: 'Kuruluş Yılı' },
   { value: '25+', label: 'Üye' },
-  { value: 'FST', label: 'Yarışma' },
+  { value: 'FS', label: 'Yarışma' },
 ]
 
 function CaptainCard({ c, delay }) {

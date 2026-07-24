@@ -4,8 +4,8 @@ import './Iletisim.css'
 const socials = [
   {
     name: 'Instagram',
-    handle: '@birbucukadanafs', /* EDIT */
-    href: '#',                  /* EDIT: Instagram URL */
+    handle: '@1.5adanaformula',
+    href: 'https://www.instagram.com/1.5adanaformula/',
     color: '#E1306C',
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40">

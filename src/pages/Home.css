@@ -125,8 +125,8 @@
   width: 40px;
   height: 40px;
 }
-.bracket-tl { top: 24px; right: 24px; border-top: 3px solid var(--accent); border-left: 3px solid var(--accent); }
-.bracket-br { bottom: 24px; right: 24px; border-bottom: 3px solid var(--accent); border-right: 3px solid var(--accent); }
+.bracket-tl { top: 24px; right: 24px; border-top: 3px solid var(--accent); border-right: 3px solid var(--accent); }
+.bracket-br { bottom: -20px; left: -20px; border-bottom: 3px solid var(--accent); border-left: 3px solid var(--accent); }
 
 /* ABOUT */
 .about-section { background: var(--surface); }
