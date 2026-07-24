@@ -6,18 +6,9 @@ const base = import.meta.env.BASE_URL
 
 const tiers = [
   {
-    label: 'ANA SPONSORLAR',
-    icon: '💎',
-    cls: 'tier-main',
-    sponsors: [
-      { name: 'Emre Makina', logo: `${base}images/sponsor-images/emremak-güncel.png`, href: 'https://www.emremakinasan.com.tr/' },
-      { name: 'Bomak',       logo: `${base}images/sponsor-images/bomak.png`,          href: 'https://bomak.com.tr/' },
-    ],
-  },
-  {
-    label: 'ALTIN SPONSORLAR',
+    label: 'ALTIN SPONSOR',
     icon: '🥇',
-    cls: 'tier-gold',
+    cls: 'tier-main',
     sponsors: [
       { name: 'Avioni',    logo: `${base}images/sponsor-images/avioni_logo.png`, href: 'https://avionitech.com//' },
       { name: 'OnPlus',    logo: `${base}images/sponsor-images/onplus-sitelogo.png`, href: 'https://www.onplus.com.tr/' },
@@ -26,7 +17,7 @@ const tiers = [
     ],
   },
   {
-    label: 'GÜMÜŞ SPONSORLAR',
+    label: 'GÜMÜŞ SPONSOR',
     icon: '🥈',
     cls: 'tier-silver',
     sponsors: [
@@ -39,7 +30,7 @@ const tiers = [
     ],
   },
   {
-    label: 'BRONZ SPONSORLAR',
+    label: 'BRONZ SPONSOR',
     icon: '🥉',
     cls: 'tier-bronze',
     sponsors: [
@@ -48,7 +39,7 @@ const tiers = [
     ],
   },
   {
-    label: 'DESTEKÇİ SPONSORLAR',
+    label: 'DESTEKÇİ SPONSOR',
     icon: '🤝',
     cls: 'tier-other',
     sponsors: [
@@ -62,7 +53,8 @@ const tiers = [
       { name: 'Şef Kebapsef', logo: `${base}images/sponsor-images/sefkebap-logo.webp`, href: 'https://www.sefkebap.com/' },
       { name: 'Groseri',          logo: `${base}images/sponsor-images/groseri-logo.png`, href: 'https://www.groseri.com.tr/' },
       { name: 'Dimes',            logo: `${base}images/sponsor-images/dimes-logo.png`, href: 'https://www.dimes.com.tr/' },
-      { name: 'Han Kahve',        logo: `${base}images/sponsor-images/hankahve-logo.jpg`, href: 'https://hankurukahvecisi.com/' }
+      { name: 'Han Kahve',        logo: `${base}images/sponsor-images/hankahve-logo.jpg`, href: 'https://hankurukahvecisi.com/' },
+      { name: 'Bilgehan Mak',     logo: `${base}images/sponsor-images/bilgehanmak.png`, href: 'https://www.bilgehanltd.com/' }
     ],
   },
 ]
