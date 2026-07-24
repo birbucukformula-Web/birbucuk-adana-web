@@ -71,7 +71,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <NavLink to="/" className="nav-logo" onClick={close}>
-            <img src={`${base}images/new-team-icon.png`} alt="1.5 Adana Formula Student" style={{ height: '40px', width: 'auto' }} />
+            <img src={`${base}images/kırmızı_beyaz.png`} alt="1.5 Adana Formula Student" style={{ height: '40px', width: 'auto' }} />
           </NavLink>
 
           {/* Masaüstü navigasyon linkleri */}
