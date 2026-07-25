@@ -44,7 +44,7 @@ const departments = [
       {
         label: 'Aerodynamics Unit',
         members: [
-          { name: 'Kayra Kurt', role: 'Aerodynamics Unit Member', photo: 'kayra_kurt.jpg', linkedin: 'https://www.linkedin.com/in/kayra-kurt-9572a6268' },
+          { name: 'Kayra Kurt', role: 'Aerodynamics Unit Leader', photo: 'kayra_kurt.jpg', linkedin: 'https://www.linkedin.com/in/kayra-kurt-9572a6268' },
         ]
       }
     ]
@@ -86,18 +86,18 @@ const departments = [
   },
   {
     id: 'sponsorluk',
-    label: '// SPONSORSHIP AND ORGANIZATION DEPARTMENT',
+    label: '// BUSINESS AND OPERATIONS DEPARTMENT',
     subUnits: [
       {
-        label: 'Sponsorship Unit',
+        label: 'Business and Operations Unit',
         members: [
-          { name: 'Tuğçe Taş', role: 'Sponsorship Unit Member', photo: 'tugce_tas.jpg', linkedin: 'https://www.linkedin.com/in/tu%C4%9F%C3%A7e-ta%C5%9F-a05342389' },
-          { name: 'Semine Karadağ', role: 'Sponsorship Unit Member', photo: 'semine_karadag.jpg', linkedin: 'https://www.linkedin.com/in/semine-karada%C4%9F-83a59b3b3' },
-          { name: 'Emine Aden Taşkın', role: 'Sponsorship Unit Member', photo: 'aden_taskin.jpg', linkedin: 'https://www.linkedin.com/in/aden-ta%C5%9Fk%C4%B1n-542158408' },
-          { name: 'Zeynep Derya Tekeci', role: 'Sponsorship Unit Member', photo: 'zeynep_derya_tekeci.jpg', linkedin: 'https://www.linkedin.com/in/zeynep-derya-tekeci-906390258' },
-          { name: 'Aysel Yılmaz', role: 'Sponsorship Unit Member', photo: 'aysel_yilmaz.jpg', linkedin: 'https://www.linkedin.com/in/aysel-yilmaz-ie' },
-          { name: 'Naz Yaman', role: 'Sponsorship Unit Member', photo: 'naz_yaman.jpg', linkedin: 'https://www.linkedin.com/in/naz-yaman' },
-          { name: 'Zeynep Vahid', role: 'Sponsorship Unit Member', photo: 'zeynep_vahid.jpg', linkedin: 'https://www.linkedin.com/in/zeynep-vahid-0951b83b1' },
+          { name: 'Tuğçe Taş', role: 'Business and Operations Unit Member', photo: 'tugce_tas.jpg', linkedin: 'https://www.linkedin.com/in/tu%C4%9F%C3%A7e-ta%C5%9F-a05342389' },
+          { name: 'Semine Karadağ', role: 'Business and Operations Unit Member', photo: 'semine_karadag.jpg', linkedin: 'https://www.linkedin.com/in/semine-karada%C4%9F-83a59b3b3' },
+          { name: 'Emine Aden Taşkın', role: 'Business and Operations Unit Member', photo: 'aden_taskin.jpg', linkedin: 'https://www.linkedin.com/in/aden-ta%C5%9Fk%C4%B1n-542158408' },
+          { name: 'Zeynep Derya Tekeci', role: 'Business and Operations Unit Member', photo: 'zeynep_derya_tekeci.jpg', linkedin: 'https://www.linkedin.com/in/zeynep-derya-tekeci-906390258' },
+          { name: 'Aysel Yılmaz', role: 'Business and Operations Unit Member', photo: 'aysel_yilmaz.jpg', linkedin: 'https://www.linkedin.com/in/aysel-yilmaz-ie' },
+          { name: 'Naz Yaman', role: 'Business and Operations Unit Member', photo: 'naz_yaman.jpg', linkedin: 'https://www.linkedin.com/in/naz-yaman' },
+          { name: 'Zeynep Vahid', role: 'Business and Operations Unit Member', photo: 'zeynep_vahid.jpg', linkedin: 'https://www.linkedin.com/in/zeynep-vahid-0951b83b1' },
         ]
       },
       {
@@ -118,18 +118,18 @@ const departments = [
     id: 'guvenlik',
     label: '// 1.5 ADANA FORMULA CAT DEPARTMENT',
     captains: [
-      { name: 'Anı', role: '1.5 Adana Formula Cat Captain', photo: 'ani.jpeg', linkedin: '#' },
+      { name: 'Anı', role: '1.5 Adana Formula Cat Captain (Mother of Cats)', photo: 'ani.jpeg', linkedin: '#', description: 'The most senior and patient of the department. No meeting is considered official without her.', shortDesc: '👑 Team Leader' },
     ],
     members: [
-      { name: 'Mechanics Cat', role: 'Mechanics Unit Member', photo: 'mekanik.jpeg', linkedin: '#' },
-      { name: 'Electronics Cat', role: 'Electronics Unit Member', photo: 'elektrik.jpeg', linkedin: '#' },
-      { name: 'Software Cat', role: 'Software Unit Member', photo: 'yazilim.jpeg', linkedin: '#' },
-      { name: 'Sponsorship & Org Cat', role: 'Sponsorship & Org Unit Member', photo: 'bando.jpeg', linkedin: '#' },
+      { name: 'Mechanics', role: 'Mechanics Unit Member', photo: 'mekanik.jpeg', linkedin: '#', description: 'Wherever it touches, something falls over or gets lost, but no one can get mad because it looks so happy playing.', shortDesc: '🔧 Chaos Master' },
+      { name: 'Electronics', role: 'Electronics Unit Member', photo: 'elektrik.jpeg', linkedin: '#', description: 'Loses its mind when it sees a cable, doesn\'t let go until the job is done.', shortDesc: '⚡ Cable Hunter' },
+      { name: 'Software', role: 'Software Unit Member', photo: 'yazilim.jpeg', linkedin: '#', description: 'Thinks sleeping on the keyboard is a job, better at finding bugs than the team.', shortDesc: '💻 Keyboard Guardian' },
+      { name: 'B&O', role: 'Business & Operations Unit Member', photo: 'bando.jpeg', linkedin: '#', description: 'Finds whoever is sad in the office. Therapy is free, the only condition is some treats. (Its name is B&O but it has nothing to do with a band, its only job is to get petted)', shortDesc: '💖 Therapy Expert' },
     ],
   },
 ]
 
-function MemberCard({ name, role, photo, linkedin, isCaptain }) {
+function MemberCard({ name, role, photo, linkedin, isCaptain, description, shortDesc }) {
   const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase()
   const content = (
     <>
@@ -138,10 +138,16 @@ function MemberCard({ name, role, photo, linkedin, isCaptain }) {
           ? <img src={`${base}images/uyeler/${photo}`} alt={name} />
           : <div className="eu-initials">{initials}</div>
         }
+        {description && (
+          <div className="eu-photo-overlay">
+            <p>{description}</p>
+          </div>
+        )}
       </div>
       <div className="eu-info">
         <h4>{name}</h4>
         <span>{role}</span>
+        {shortDesc && <div className="eu-short-desc">{shortDesc}</div>}
       </div>
       {linkedin && linkedin !== '#' && <div className="eu-linkedin-badge">in</div>}
     </>

@@ -44,7 +44,7 @@ const departments = [
       {
         label: 'Aerodinamik Birimi',
         members: [
-          { name: 'Kayra Kurt', role: 'Aerodinamik Birim Üyesi', photo: 'kayra_kurt.jpg', linkedin: 'https://www.linkedin.com/in/kayra-kurt-9572a6268' },
+          { name: 'Kayra Kurt', role: 'Aerodinamik Birim Lideri', photo: 'kayra_kurt.jpg', linkedin: 'https://www.linkedin.com/in/kayra-kurt-9572a6268' },
         ]
       }
     ]
@@ -89,15 +89,15 @@ const departments = [
     label: '// SPONSORLUK VE ORGANİZASYON DEPARTMANI',
     subUnits: [
       {
-        label: 'Sponsorluk Birimi',
+        label: 'Sponsorluk ve Organizasyon Birimi',
         members: [
-          { name: 'Tuğçe Taş', role: 'Sponsorluk Birim Üyesi', photo: 'tugce_tas.jpg', linkedin: 'https://www.linkedin.com/in/tu%C4%9F%C3%A7e-ta%C5%9F-a05342389' },
-          { name: 'Semine Karadağ', role: 'Sponsorluk Birim Üyesi', photo: 'semine_karadag.jpg', linkedin: 'https://www.linkedin.com/in/semine-karada%C4%9F-83a59b3b3' },
-          { name: 'Emine Aden Taşkın', role: 'Sponsorluk Birim Üyesi', photo: 'aden_taskin.jpg', linkedin: 'https://www.linkedin.com/in/aden-ta%C5%9Fk%C4%B1n-542158408' },
-          { name: 'Zeynep Derya Tekeci', role: 'Sponsorluk Birim Üyesi', photo: 'zeynep_derya_tekeci.jpg', linkedin: 'https://www.linkedin.com/in/zeynep-derya-tekeci-906390258' },
-          { name: 'Aysel Yılmaz', role: 'Sponsorluk Birim Üyesi', photo: 'aysel_yilmaz.jpg', linkedin: 'https://www.linkedin.com/in/aysel-yilmaz-ie' },
-          { name: 'Naz Yaman', role: 'Sponsorluk Birim Üyesi', photo: 'naz_yaman.jpg', linkedin: 'https://www.linkedin.com/in/naz-yaman' },
-          { name: 'Zeynep Vahid', role: 'Sponsorluk Birim Üyesi', photo: 'zeynep_vahid.jpg', linkedin: 'https://www.linkedin.com/in/zeynep-vahid-0951b83b1' },
+          { name: 'Tuğçe Taş', role: 'Sponsorluk ve Organizasyon Birim Üyesi', photo: 'tugce_tas.jpg', linkedin: 'https://www.linkedin.com/in/tu%C4%9F%C3%A7e-ta%C5%9F-a05342389' },
+          { name: 'Semine Karadağ', role: 'Sponsorluk ve Organizasyon Birim Üyesi', photo: 'semine_karadag.jpg', linkedin: 'https://www.linkedin.com/in/semine-karada%C4%9F-83a59b3b3' },
+          { name: 'Emine Aden Taşkın', role: 'Sponsorluk ve Organizasyon Birim Üyesi', photo: 'aden_taskin.jpg', linkedin: 'https://www.linkedin.com/in/aden-ta%C5%9Fk%C4%B1n-542158408' },
+          { name: 'Zeynep Derya Tekeci', role: 'Sponsorluk ve Organizasyon Birim Üyesi', photo: 'zeynep_derya_tekeci.jpg', linkedin: 'https://www.linkedin.com/in/zeynep-derya-tekeci-906390258' },
+          { name: 'Aysel Yılmaz', role: 'Sponsorluk ve Organizasyon Birim Üyesi', photo: 'aysel_yilmaz.jpg', linkedin: 'https://www.linkedin.com/in/aysel-yilmaz-ie' },
+          { name: 'Naz Yaman', role: 'Sponsorluk ve Organizasyon Birim Üyesi', photo: 'naz_yaman.jpg', linkedin: 'https://www.linkedin.com/in/naz-yaman' },
+          { name: 'Zeynep Vahid', role: 'Sponsorluk ve Organizasyon Birim Üyesi', photo: 'zeynep_vahid.jpg', linkedin: 'https://www.linkedin.com/in/zeynep-vahid-0951b83b1' },
         ]
       },
       {
@@ -118,18 +118,18 @@ const departments = [
     id: 'guvenlik',
     label: '// 1.5 ADANA FORMULA KEDİ DEPARTMANI',
     captains: [
-      { name: 'Anı', role: '1.5 Adana Formula Kedi Kaptanı', photo: 'ani.jpeg', linkedin: '#' },
+      { name: 'Anı', role: '1.5 Adana Formula Kedi Kaptanı (Anne Kedi)', photo: 'ani.jpeg', linkedin: '#', description: 'Departmanın en kıdemlisi, en sabırlısı. O olmadan hiçbir toplantı resmi sayılmaz.', shortDesc: '👑 Ekip Lideri' },
     ],
     members: [
-      { name: 'Mekanik Kedisi', role: 'Mekanik Birim Üyesi', photo: 'mekanik.jpeg', linkedin: '#' },
-      { name: 'Elektrik Kedisi', role: 'Elektrik Birim Üyesi', photo: 'elektrik.jpeg', linkedin: '#' },
-      { name: 'Yazılım Kedisi', role: 'Yazılım Birim Üyesi', photo: 'yazilim.jpeg', linkedin: '#' },
-      { name: 'B&O Kedisi', role: 'B&O Birim Üyesi', photo: 'bando.jpeg', linkedin: '#' },
+      { name: 'Mekanik', role: 'Mekanik Birim Üyesi', photo: 'mekanik.jpeg', linkedin: '#', description: 'Nereye dokunsa bir şey devrilir, bir şey kaybolur ama kimse ona kızamıyor çünkü oynarken o kadar mutlu ki.', shortDesc: '🔧 Kaos Ustası' },
+      { name: 'Elektrik', role: 'Elektrik Birim Üyesi', photo: 'elektrik.jpeg', linkedin: '#', description: 'Kablo gördü mü akıl fikir gitti, iş bitene kadar peşini bırakmıyor.', shortDesc: '⚡ Kablo Avcısı' },
+      { name: 'Yazılım', role: 'Yazılım Birim Üyesi', photo: 'yazilim.jpeg', linkedin: '#', description: 'Klavyenin üstüne yatmayı iş sanıyor, bug bulmada ekipten daha başarılı.', shortDesc: '💻 Klavye Bekçisi' },
+      { name: 'Bando', role: 'B&O Birim Üyesi', photo: 'bando.jpeg', linkedin: '#', description: 'Ofiste kim üzgünse onu bulur. Terapi ücretsiz, tek şartı biraz mama. (adı B&O ama bandoyla alakası yok, sadece sevdirmekle görevli)', shortDesc: '💖 Terapi Uzmanı' },
     ],
   },
 ]
 
-function MemberCard({ name, role, photo, linkedin, isCaptain }) {
+function MemberCard({ name, role, photo, linkedin, isCaptain, description, shortDesc }) {
   const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase()
   const content = (
     <>
@@ -138,10 +138,16 @@ function MemberCard({ name, role, photo, linkedin, isCaptain }) {
           ? <img src={`${base}images/uyeler/${photo}`} alt={name} />
           : <div className="eu-initials">{initials}</div>
         }
+        {description && (
+          <div className="eu-photo-overlay">
+            <p>{description}</p>
+          </div>
+        )}
       </div>
       <div className="eu-info">
         <h4>{name}</h4>
         <span>{role}</span>
+        {shortDesc && <div className="eu-short-desc">{shortDesc}</div>}
       </div>
       {linkedin && linkedin !== '#' && <div className="eu-linkedin-badge">in</div>}
     </>
