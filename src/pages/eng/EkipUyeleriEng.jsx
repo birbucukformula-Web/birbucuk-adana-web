@@ -121,10 +121,10 @@ const departments = [
       { name: 'Anı', role: '1.5 Adana Formula Cat Captain', photo: 'ani.jpeg', linkedin: '#' },
     ],
     members: [
-      { name: 'Mechanics Cat', role: 'Mechanics Security Guard', photo: 'mekanik.jpeg', linkedin: '#' },
-      { name: 'Electronics Cat', role: 'Electronics Security Guard', photo: 'elektrik.jpeg', linkedin: '#' },
-      { name: 'Software Cat', role: 'Software Security Guard', photo: 'yazilim.jpeg', linkedin: '#' },
-      { name: 'Sponsorship & Org Cat', role: 'Sponsorship & Org Security Guard', photo: 'bando.jpeg', linkedin: '#' },
+      { name: 'Mechanics Cat', role: 'Mechanics Unit Member', photo: 'mekanik.jpeg', linkedin: '#' },
+      { name: 'Electronics Cat', role: 'Electronics Unit Member', photo: 'elektrik.jpeg', linkedin: '#' },
+      { name: 'Software Cat', role: 'Software Unit Member', photo: 'yazilim.jpeg', linkedin: '#' },
+      { name: 'Sponsorship & Org Cat', role: 'Sponsorship & Org Unit Member', photo: 'bando.jpeg', linkedin: '#' },
     ],
   },
 ]

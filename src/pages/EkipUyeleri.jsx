@@ -46,8 +46,6 @@ const departments = [
         members: [
           { name: 'Kayra Kurt', role: 'Aerodinamik Birim Üyesi', photo: 'kayra_kurt.jpg', linkedin: 'https://www.linkedin.com/in/kayra-kurt-9572a6268' },
         ]
-      },
-        ]
       }
     ]
   },
@@ -123,10 +121,10 @@ const departments = [
       { name: 'Anı', role: '1.5 Adana Formula Kedi Kaptanı', photo: 'ani.jpeg', linkedin: '#' },
     ],
     members: [
-      { name: 'Mekanik Kedisi', role: 'Mekanik Güvenlik Görevlisi', photo: 'mekanik.jpeg', linkedin: '#' },
-      { name: 'Elektrik Kedisi', role: 'Elektrik Güvenlik Görevlisi', photo: 'elektrik.jpeg', linkedin: '#' },
-      { name: 'Yazılım Kedisi', role: 'Yazılım Güvenlik Görevlisi', photo: 'yazilim.jpeg', linkedin: '#' },
-      { name: 'B&O Kedisi', role: 'B&O Güvenlik Görevlisi', photo: 'bando.jpeg', linkedin: '#' },
+      { name: 'Mekanik Kedisi', role: 'Mekanik Birim Üyesi', photo: 'mekanik.jpeg', linkedin: '#' },
+      { name: 'Elektrik Kedisi', role: 'Elektrik Birim Üyesi', photo: 'elektrik.jpeg', linkedin: '#' },
+      { name: 'Yazılım Kedisi', role: 'Yazılım Birim Üyesi', photo: 'yazilim.jpeg', linkedin: '#' },
+      { name: 'B&O Kedisi', role: 'B&O Birim Üyesi', photo: 'bando.jpeg', linkedin: '#' },
     ],
   },
 ]
