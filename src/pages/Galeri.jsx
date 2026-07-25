@@ -3,34 +3,70 @@ import './Galeri.css';
 
 const base = import.meta.env.BASE_URL;
 
-// Galeri Verileri (Klasör yapısı veya API olmadığı için statik örnekler)
 const galleryData = {
-  2025: [
+  '2026': [
     {
-      id: "2025-bahar",
-      title: "Bahar Şenliği",
-      cover: "hakkimizda_section.jpeg",
-      images: ["hakkimizda_section.jpeg", "takim1.jpeg", "formula_students.jpg"]
+      id: "2026-cufest",
+      title: "CUFest Etkinliği",
+      subtitle: "2026 Üniversite Fuarı",
+      cover: "galeri/cufest/cufest4.jpg",
+      images: [
+        "galeri/cufest/cufest.jpg",
+        "galeri/cufest/cufest1.jpg",
+        "galeri/cufest/cufest3.jpg",
+        "galeri/cufest/cufest4.jpg",
+        "galeri/cufest/cufest5.jpg",
+        "galeri/cufest/cufest6.jpg"
+      ]
     },
     {
-      id: "2025-atolye",
-      title: "Atölye Çalışmaları",
-      cover: "takim1.jpeg",
-      images: ["takim1.jpeg", "team_leader.jpg", "atolyemiz.jpg"]
+      id: "2026-yapim",
+      title: "Yapım Aşaması 2026",
+      subtitle: "2026 Araba Yapım Süreci",
+      cover: "galeri/yapimasamasi26/yapim26_1.JPG",
+      images: [
+        "galeri/yapimasamasi26/yapim26_1.JPG",
+        "galeri/yapimasamasi26/yapim26_2.jpeg",
+        "galeri/yapimasamasi26/yapim26_3.jpeg",
+        "galeri/yapimasamasi26/yapim26_4.jpeg"
+      ]
     }
   ],
-  2026: [
+  '2025': [
     {
-      id: "2026-lansman",
-      title: "2026 Araç Lansmanı (Konsept)",
-      cover: "formula_students.jpg",
-      images: ["formula_students.jpg", "takim1.jpeg"]
+      id: "2025-yapim",
+      title: "Yapım Aşaması 2025",
+      subtitle: "2025 Araba Yapım Süreci",
+      cover: "galeri/yapimasamasi25/yapim25_1.jpg",
+      images: [
+        "galeri/yapimasamasi25/yapim25_1.jpg",
+        "galeri/yapimasamasi25/yapim25_2.JPG",
+        "galeri/yapimasamasi25/yapim25_3.jpg",
+        "galeri/yapimasamasi25/yapim25_4.jpg"
+      ]
+    },
+    {
+      id: "2025-yilbasi",
+      title: "Yılbaşı Etkinliği 2025",
+      subtitle: "Takım Yılbaşı Kutlaması",
+      cover: "galeri/yilbasi25/yilbasi1.jpg",
+      images: [
+        "galeri/yilbasi25/yilbasi1.jpg",
+        "galeri/yilbasi25/yilbasi2.jpg",
+        "galeri/yilbasi25/yilbasi3.jpg",
+        "galeri/yilbasi25/yilbasi4.jpg",
+        "galeri/yilbasi25/yilbasi5.jpg",
+        "galeri/yilbasi25/yilbasi6.jpg",
+        "galeri/yilbasi25/yilbasi7.jpg",
+        "galeri/yilbasi25/yilbasi8.jpg",
+        "galeri/yilbasi25/yilbasi9.jpg"
+      ]
     }
   ]
 };
 
 export default function Galeri() {
-  const [activeYear, setActiveYear] = useState('2025');
+  const [activeYear, setActiveYear] = useState('2026');
   const [activeAlbum, setActiveAlbum] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -75,32 +111,33 @@ export default function Galeri() {
         {/* Yıl Sekmeleri */}
         <div className="year-tabs reveal">
           <button 
-            className={`year-tab ${activeYear === '2025' ? 'active' : ''}`}
-            onClick={() => setActiveYear('2025')}
-          >
-            2025
-          </button>
-          <button 
             className={`year-tab ${activeYear === '2026' ? 'active' : ''}`}
             onClick={() => setActiveYear('2026')}
           >
             2026
           </button>
+          <button 
+            className={`year-tab ${activeYear === '2025' ? 'active' : ''}`}
+            onClick={() => setActiveYear('2025')}
+          >
+            2025
+          </button>
         </div>
 
         {/* Albüm Kartları */}
         <div className="albums-grid">
-          {galleryData[activeYear].map((album, idx) => (
+          {(galleryData[activeYear] || []).map((album, idx) => (
             <div 
               key={album.id} 
-              className={`album-card reveal reveal-delay-${(idx % 4) + 1}`}
+              className="album-card"
               onClick={() => openAlbum(album)}
             >
               <div className="album-cover">
                 <img src={`${base}images/${album.cover}`} alt={album.title} />
                 <div className="album-overlay">
+                  <span className="album-count">{album.images.length} Fotoğraf</span>
                   <h3>{album.title}</h3>
-                  <span>{album.images.length} Fotoğraf</span>
+                  {album.subtitle && <p className="album-subtitle">{album.subtitle}</p>}
                 </div>
               </div>
             </div>
