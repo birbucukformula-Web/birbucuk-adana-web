@@ -50,7 +50,7 @@ const departments = [
       {
         label: 'Mekanik Kedisi',
         members: [
-          { name: 'Mekanik Kedisi', role: 'Mekanik Güvenlik Görevlisi', photo: null, linkedin: '#' },
+          { name: 'Mekanik Kedisi', role: 'Mekanik Güvenlik Görevlisi', photo: 'mekanik.jpeg', linkedin: '#' },
         ]
       }
     ]
@@ -61,7 +61,7 @@ const departments = [
     members: [
       { name: 'Demir Tuna Torun', role: 'Elektrik Kaptanı', photo: 'demir_torun.jpg', linkedin: 'https://www.linkedin.com/in/demir-torun-45a80a278' },
       { name: 'Muhammed Furkan Kutlu', role: 'Elektrik Birim Üyesi', photo: 'muhammed_furkan_kutlu.jpg', linkedin: 'https://www.linkedin.com/in/muhammed-furkan-kutlu-894532344' },
-      { name: 'Elektrik Kedisi', role: 'Elektrik Güvenlik Görevlisi', photo: null, linkedin: '#' },
+      { name: 'Elektrik Kedisi', role: 'Elektrik Güvenlik Görevlisi', photo: 'elektrik.jpeg', linkedin: '#' },
     ],
   },
   {
@@ -92,7 +92,7 @@ const departments = [
       {
         label: 'Yazılım Kedisi',
         members: [
-          { name: 'Yazılım Kedisi', role: 'Yazılım Güvenlik Görevlisi', photo: null, linkedin: '#' },
+          { name: 'Yazılım Kedisi', role: 'Yazılım Güvenlik Görevlisi', photo: 'yazilim.jpeg', linkedin: '#' },
         ]
       }
     ]
@@ -128,7 +128,7 @@ const departments = [
       {
         label: 'B&O Kedisi',
         members: [
-          { name: 'B&O Kedisi', role: 'B&O Güvenlik Görevlisi', photo: null, linkedin: '#' },
+          { name: 'B&O Kedisi', role: 'B&O Güvenlik Görevlisi', photo: 'bando.jpeg', linkedin: '#' },
         ]
       }
     ]
@@ -137,7 +137,7 @@ const departments = [
     id: 'guvenlik',
     label: '// 1.5 ADANA GÜVENLİK GÖREVLİSİ',
     members: [
-      { name: 'Anı', role: '1.5 Adana Güvenlik Görevlisi', photo: null, linkedin: '#' },
+      { name: 'Anı', role: '1.5 Adana Güvenlik Görevlisi', photo: 'ani.jpeg', linkedin: '#' },
     ],
   },
 ]

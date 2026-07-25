@@ -6,7 +6,7 @@ const base = import.meta.env.BASE_URL
 const specs2026 = [
   { key: 'Motor Tipi',      value: 'Elektrikli' },
   { key: 'Şasi',            value: 'Çelik Boru Kafes' },
-  { key: 'Toplam Ağırlık',  value: '230 kg' },
+  { key: 'Toplam Ağırlık',  value: '~230 kg' },
   { key: 'Güç',             value: '80 kW' },
   { key: 'İvmelenme',       value: '3.9s (0-100)' },
   { key: 'Tekerlek Tabanı', value: '1530 mm' },
