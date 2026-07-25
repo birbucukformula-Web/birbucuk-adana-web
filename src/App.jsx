@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -60,6 +60,7 @@ export default function App() {
           <Route path="/iletisim" element={language === 'en' ? <IletisimEng /> : <Iletisim />} />
           <Route path="/galeri" element={language === 'en' ? <GaleriEng /> : <Galeri />} />
           <Route path="/ekip-uyeleri" element={language === 'en' ? <EkipUyeleriEng /> : <EkipUyeleri />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
       <Footer />
