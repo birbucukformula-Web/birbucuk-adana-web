@@ -48,10 +48,10 @@ const departments = [
         ]
       },
       {
-        label: 'Mekanik Kedisi',
+        label: 'Mechanics Cat',
         members: [
-          { name: 'Mekanik Kedisi', role: 'Mechanics Security Guard', photo: 'mekanik.jpeg', linkedin: '#' },
-        ]
+          { name: 'Mechanics Cat', role: 'Mechanics Security Guard', photo: 'mekanik.jpeg', linkedin: '#' },
+        ],
       }
     ]
   },
@@ -61,7 +61,7 @@ const departments = [
     members: [
       { name: 'Demir Tuna Torun', role: 'Electronics Captain', photo: 'demir_torun.jpg', linkedin: 'https://www.linkedin.com/in/demir-torun-45a80a278' },
       { name: 'Muhammed Furkan Kutlu', role: 'Electronics Unit Member', photo: 'muhammed_furkan_kutlu.jpg', linkedin: 'https://www.linkedin.com/in/muhammed-furkan-kutlu-894532344' },
-      { name: 'Elektrik Kedisi', role: 'Electronics Security Guard', photo: 'elektrik.jpeg', linkedin: '#' },
+      { name: 'Electronics Cat', role: 'Electronics Security Guard', photo: 'elektrik.jpeg', linkedin: '#' },
     ],
   },
   {
@@ -90,10 +90,10 @@ const departments = [
         ]
       },
       {
-        label: 'Yazılım Kedisi',
+        label: 'Software Cat',
         members: [
-          { name: 'Yazılım Kedisi', role: 'Software Security Guard', photo: 'yazilim.jpeg', linkedin: '#' },
-        ]
+          { name: 'Software Cat', role: 'Software Security Guard', photo: 'yazilim.jpeg', linkedin: '#' },
+        ],
       }
     ]
   },
@@ -126,10 +126,10 @@ const departments = [
         ]
       },
       {
-        label: 'B&O Kedisi',
+        label: 'Sponsorship & Org Cat',
         members: [
-          { name: 'B&O Kedisi', role: 'B&O Security Guard', photo: 'bando.jpeg', linkedin: '#' },
-        ]
+          { name: 'Sponsorship & Org Cat', role: 'Sponsorship & Org Security Guard', photo: 'bando.jpeg', linkedin: '#' },
+        ],
       }
     ]
   },
