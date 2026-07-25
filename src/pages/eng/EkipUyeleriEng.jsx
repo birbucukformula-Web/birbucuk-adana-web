@@ -31,8 +31,8 @@ const departments = [
         label: 'Chassis Unit',
         members: [
           { name: 'Kerem Kanar', role: 'Chassis Unit Leader', photo: 'kerem_kanar.jpg', linkedin: 'https://www.linkedin.com/in/kerem-kanar-baa49733b' },
-          { name: 'Buse Nur Can', role: 'Chassis Unit Member', photo: 'buse_nur_can.jpg', linkedin: 'https://www.linkedin.com/in/busenurcan' },
-        ]
+          { name: 'Busenur Can', role: 'Chassis Unit Member', photo: 'buse_nur_can.jpg', linkedin: 'https://www.linkedin.com/in/busenurcan' },
+        ],
       },
       {
         label: 'Vehicle Dynamics Unit',
@@ -135,9 +135,9 @@ const departments = [
   },
   {
     id: 'guvenlik',
-    label: '// 1.5 ADANA FORMULA SECURITY GUARD',
+    label: '// 1.5 ADANA FORMULA CAT DEPARTMENT',
     members: [
-      { name: 'Anı', role: '1.5 Adana Formula Security Guard', photo: 'ani.jpeg', linkedin: '#' },
+      { name: 'Anı', role: '1.5 Adana Formula Cat Captain', photo: 'ani.jpeg', linkedin: '#' },
     ],
   },
 ]

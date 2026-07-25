@@ -31,8 +31,8 @@ const departments = [
         label: 'Şasi Birimi',
         members: [
           { name: 'Kerem Kanar', role: 'Şasi Birim Lideri', photo: 'kerem_kanar.jpg', linkedin: 'https://www.linkedin.com/in/kerem-kanar-baa49733b' },
-          { name: 'Buse Nur Can', role: 'Şasi Birim Üyesi', photo: 'buse_nur_can.jpg', linkedin: 'https://www.linkedin.com/in/busenurcan' },
-        ]
+          { name: 'Busenur Can', role: 'Şasi Birim Üyesi', photo: 'buse_nur_can.jpg', linkedin: 'https://www.linkedin.com/in/busenurcan' },
+        ],
       },
       {
         label: 'Araç Dinamiği Birimi',
@@ -135,9 +135,9 @@ const departments = [
   },
   {
     id: 'guvenlik',
-    label: '// 1.5 ADANA FORMULA GÜVENLİK GÖREVLİSİ',
+    label: '// 1.5 ADANA FORMULA KEDİ DEPARTMANI',
     members: [
-      { name: 'Anı', role: '1.5 Adana Formula Güvenlik Görevlisi', photo: 'ani.jpeg', linkedin: '#' },
+      { name: 'Anı', role: '1.5 Adana Formula Kedi Kaptanı', photo: 'ani.jpeg', linkedin: '#' },
     ],
   },
 ]
