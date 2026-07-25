@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom'
 import './Home.css'
 
-/* EDIT: Add your actual captain photos to src/assets/images/ */
 const captains = [
-  { name: 'Ahmet Göksel Durmaz', title: 'Takım Kaptanı', photo: 'https://birbucukadanaformula.com/images/team_leader.jpg' },
-  { name: 'Mustafa Mert Abbak', title: 'Mekanik Departmanı', photo: 'https://birbucukadanaformula.com/images/mechanic_leader.jpg' },
-  { name: 'Demir Torun', title: 'Elektrik Departmanı', photo: 'https://birbucukadanaformula.com/images/demir.png' },
-  { name: 'Necdet Özdemir', title: 'Yazılım Departmanı', photo: 'https://birbucukadanaformula.com/images/software_leader.jpg' },
+  { name: 'Ahmet Göksel Durmaz', title: 'Takım Kaptanı', photo: 'ahmet_goksel_durmaz.jpg' },
+  { name: 'Mustafa Mert Abbak', title: 'Mekanik Kaptanı', photo: 'mustafa_mert_abbak.jpg' },
+  { name: 'Demir Tuna Torun', title: 'Elektrik Kaptanı', photo: 'demir_torun.jpg' },
+  { name: 'Necdet Özdemir', title: 'Yazılım Kaptanı', photo: 'necdet_ozdemir.jpg' },
 ]
 
 const stats = [
@@ -15,15 +14,17 @@ const stats = [
   { value: 'FS', label: 'Yarışma' },
 ]
 
+const base = import.meta.env.BASE_URL
+
 function CaptainCard({ c, delay }) {
   const initials = c.name.split(' ').slice(0, 2).map(n => n[0]).join('')
   return (
     <div className={`captain-card card reveal reveal-delay-${delay}`}>
       <div className="captain-photo-wrap">
-        <img
-          src={c.photo}
-          alt={c.name}
-          onError={e => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex' }}
+        <img src={`${base}images/uyeler/${c.photo}`} alt={c.name} onError={e => {
+          e.target.style.display = 'none';
+          e.target.nextSibling.style.display = 'flex'
+        }}
         />
         <div className="captain-initials" style={{ display: 'none' }}>{initials}</div>
       </div>
@@ -41,7 +42,9 @@ export default function Home() {
       {/* HERO */}
       <section className="hero scanline-bg">
         <div className="hero-lines" aria-hidden="true">
-          {[...Array(6)].map((_, i) => <span key={i} className="hero-line" style={{ animationDelay: `${i * 0.4}s` }} />)}
+          {[...Array(6)].map((_, i) => <span key={i} className="hero-line" style={{
+            animationDelay: `${i * 0.4}s`
+          }} />)}
         </div>
         <div className="hero-content reveal">
           <h1 className="hero-title">
@@ -71,7 +74,8 @@ export default function Home() {
               <div className="red-line" />
               <h2>Yarışa Hazır.<br />Sınırları Zorluyor.</h2>
               <p className="mt-16 text-secondary">
-                Mühendislik, tutku ve kodun birleştiği 2026 aracımız — her detayı takımımız tarafından tasarlandı.
+                Mühendislik, tutku ve kodun birleştiği 2026 aracımız — her detayı takımımız tarafından
+                tasarlandı.
               </p>
               <Link to="/araclarimiz" className="btn-primary mt-32 inline-block">ARAÇLARI İNCELE →</Link>
             </div>
@@ -88,7 +92,8 @@ export default function Home() {
           <div className="reveal">
             <p className="section-label">// FORMULA STUDENT NEDİR?</p>
             <div className="red-line" />
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3.2rem)' }}>Mühendisliğin<br />Yarış Pistindeki<br /><span className="text-red">Sınavı</span></h2>
+            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3.2rem)' }}>Mühendisliğin<br />Yarış Pistindeki<br /><span
+              className="text-red">Sınavı</span></h2>
             <p className="mt-24 text-secondary" style={{ fontSize: '16px', lineHeight: '1.8' }}>
               Formula Student, dünya genelinde üniversite öğrencilerinin tek kişilik yarış araçları tasarladığı,
               ürettiği ve yarıştırdığı uluslararası bir mühendislik yarışmasıdır. Teknik mükemmeliyetin
@@ -120,7 +125,7 @@ export default function Home() {
             ))}
           </div>
           <div className="reveal mt-48" style={{ textAlign: 'center' }}>
-            <Link to="/hakkimizda" className="btn-outline">TÜM TAKIM →</Link>
+            <Link to="/ekip-uyeleri" className="btn-outline">BÜTÜN TAKIMI GÖR →</Link>
           </div>
         </div>
       </section>

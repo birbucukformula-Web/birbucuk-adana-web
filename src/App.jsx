@@ -13,6 +13,7 @@ import Sponsorlar from './pages/Sponsorlar'
 import Oyun from './pages/Oyun'
 import Iletisim from './pages/Iletisim'
 import Galeri from './pages/Galeri'
+import EkipUyeleri from './pages/EkipUyeleri'
 import useScrollReveal from './hooks/useScrollReveal'
 
 function ScrollToTop() {
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="/oyun" element={<Oyun />} />
           <Route path="/iletisim" element={<Iletisim />} />
           <Route path="/galeri" element={<Galeri />} />
+          <Route path="/ekip-uyeleri" element={<EkipUyeleri />} />
         </Routes>
       </main>
       <Footer />

@@ -1,0 +1,227 @@
+/* EKİP ÜYELERİ SAYFASI */
+
+.eu-page {
+  padding-bottom: 100px;
+}
+
+/* HERO */
+.eu-hero {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 180px 0 100px;
+  text-align: center;
+}
+
+.eu-hero h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.eu-hero-sub {
+  font-size: 17px;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  letter-spacing: 1px;
+}
+
+/* CONTENT */
+.eu-content {
+  padding: 80px 0;
+}
+
+/* DEPARTMAN BLOĞU */
+.eu-dept-block {
+  margin-bottom: 72px;
+}
+
+.eu-dept-header {
+  margin-bottom: 28px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.eu-dept-header span {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--accent);
+  letter-spacing: 2px;
+}
+
+/* GRID */
+.eu-members-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.eu-captains-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.eu-subunits-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.eu-subunit-title {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--accent);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* KART */
+.eu-member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  padding: 0 0 18px 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  width: 180px;
+  min-width: 180px; /* Esnemesini engellemek için */
+  flex-shrink: 0;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eu-member-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+.eu-member-card--captain {
+  border-top: 3px solid var(--accent);
+}
+
+/* FOTOĞRAF */
+.eu-photo-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Kare formatı */
+  border-radius: 0;
+  overflow: hidden;
+  border-bottom: 2px solid var(--border);
+  transition: border-color 0.3s;
+  flex-shrink: 0;
+}
+
+.eu-member-card:hover .eu-photo-wrap {
+  border-bottom-color: var(--accent);
+}
+
+.eu-photo-wrap--captain {
+  aspect-ratio: 4 / 5; /* Kaptanlar için biraz daha uzun dikdörtgen */
+}
+
+.eu-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+/* Fotoğrafsız — siyah zemin + baş harfler */
+.eu-initials {
+  width: 100%;
+  height: 100%;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+/* İSİM & ROL */
+.eu-info {
+  padding: 0 14px;
+}
+
+.eu-info h4 {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.eu-info span {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+  display: block;
+  line-height: 1.4;
+}
+
+/* LİNKEDİN BADGE */
+.eu-linkedin-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  background: #0077b5;
+  border-radius: 4px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 900;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.eu-member-card:hover .eu-linkedin-badge {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* MOBİL */
+@media (max-width: 768px) {
+  .eu-captains-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .eu-members-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .eu-captains-grid {
+    grid-template-columns: 1fr;
+  }
+}

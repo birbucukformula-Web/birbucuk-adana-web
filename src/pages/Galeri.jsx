@@ -8,7 +8,7 @@ const galleryData = {
     {
       id: "2026-cufest",
       title: "CUFest Etkinliği",
-      subtitle: "2026 Üniversite Fuarı",
+      subtitle: "2026 Üniversite Bahar Şenliği",
       cover: "galeri/cufest/cufest4.jpg",
       images: [
         "galeri/cufest/cufest.jpg",
@@ -23,7 +23,7 @@ const galleryData = {
       id: "2026-yapim",
       title: "Yapım Aşaması 2026",
       subtitle: "2026 Araba Yapım Süreci",
-      cover: "galeri/yapimasamasi26/yapim26_1.JPG",
+      cover: "galeri/yapimasamasi26/yapim26_3.jpeg",
       images: [
         "galeri/yapimasamasi26/yapim26_1.JPG",
         "galeri/yapimasamasi26/yapim26_2.jpeg",
@@ -34,10 +34,26 @@ const galleryData = {
   ],
   '2025': [
     {
+      id: "2025-fs25",
+      title: "FS25",
+      subtitle: "Formula Student 2025",
+      cover: "galeri/fs25/fs25_6.jpg",
+      images: [
+        "galeri/fs25/fs25_1.jpg",
+        "galeri/fs25/fs25_2.jpg",
+        "galeri/fs25/fs25_3.jpg",
+        "galeri/fs25/fs25_4.jpg",
+        "galeri/fs25/fs25_5.jpg",
+        "galeri/fs25/fs25_6.jpg",
+        "galeri/fs25/fs25_7.jpg",
+        "galeri/fs25/fs25_8.jpg"
+      ]
+    },
+    {
       id: "2025-yapim",
       title: "Yapım Aşaması 2025",
       subtitle: "2025 Araba Yapım Süreci",
-      cover: "galeri/yapimasamasi25/yapim25_1.jpg",
+      cover: "galeri/yapimasamasi25/yapim25_2.JPG",
       images: [
         "galeri/yapimasamasi25/yapim25_1.jpg",
         "galeri/yapimasamasi25/yapim25_2.JPG",

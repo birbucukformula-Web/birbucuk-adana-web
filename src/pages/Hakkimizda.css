@@ -134,90 +134,15 @@
 }
 
 
-/* =========================================
-   TEAM (İleride lazım olursa diye silinmedi)
-========================================= */
-.team-section { background: var(--surface); }
-.dept-block { margin-bottom: 64px; }
-.dept-header {
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-}
-.dept-header span {
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: var(--accent);
-  letter-spacing: 2px;
-}
-.members-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-}
-.member-card {
-  padding: 24px 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-  text-align: center;
-}
-.member-photo-wrap {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2px solid var(--border);
-  transition: border-color 0.3s;
-}
-.member-card:hover .member-photo-wrap { border-color: var(--accent); }
-.member-photo-wrap img { width: 100%; height: 100%; object-fit: cover; }
-.member-initials {
-  width: 100%;
-  height: 100%;
-  background: var(--bg);
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 800;
-  color: var(--accent);
-}
-.member-info h4 {
-  font-family: var(--font-display);
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.member-info span {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--accent);
-  letter-spacing: 1px;
-  margin-top: 4px;
-  display: block;
-}
 
 
 /* =========================================
    MOBİL UYUMLULUK (HEPSİ BİRLEŞTİRİLDİ)
 ========================================= */
 @media (max-width: 900px) {
-  /* Hikaye Kısmı */
   .story-grid { grid-template-columns: 1fr; }
   .story-img img { height: 320px; }
-  
-  /* Vizyon Misyon */
   .vm-grid { grid-template-columns: 1fr; }
-  
-  /* Atölyemiz */
-  .workshop-grid { 
-    grid-template-columns: 1fr; 
-    gap: 32px;
-  }
+  .workshop-grid { grid-template-columns: 1fr; gap: 32px; }
   .workshop-main-img { height: 350px; }
-}
+}
