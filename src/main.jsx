@@ -7,7 +7,7 @@ import { LanguageProvider } from './contexts/LanguageContext'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/Deneme-bolgesi">
+    <BrowserRouter>
       <LanguageProvider>
         <App />
       </LanguageProvider>
