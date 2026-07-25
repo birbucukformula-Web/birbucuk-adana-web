@@ -2,7 +2,7 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/Deneme-bolgesi/images/kırmızı_siyah.png" />
+    <link rel="icon" type="image/png" href="/images/kırmızı_siyah.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="1.5 Adana Formula Student — Çukurova Üniversitesi Formula Student Takımı" />
     <title>1.5 Adana Formula Student</title>
@@ -20,10 +20,17 @@
             l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
+        
+        // Eski 'Deneme-bolgesi' uzantılı Google linklerini yeni domaine (kök dizine) yönlendir
+        if (window.location.pathname.includes('/Deneme-bolgesi')) {
+          var newPath = window.location.pathname.replace('/Deneme-bolgesi', '');
+          if (newPath === '') newPath = '/';
+          window.history.replaceState(null, null, newPath + window.location.search + window.location.hash);
+        }
       }(window.location))
     </script>
-    <script type="module" crossorigin src="/Deneme-bolgesi/assets/index-BAkBYMA-.js"></script>
-    <link rel="stylesheet" crossorigin href="/Deneme-bolgesi/assets/index-GI6uxl6V.css">
+    <script type="module" crossorigin src="/assets/index-C2C6j6Nn.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CqLiBCD1.css">
   </head>
   <body>
     <div id="root"></div>
