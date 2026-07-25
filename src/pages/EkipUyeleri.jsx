@@ -99,7 +99,7 @@ const departments = [
   },
   {
     id: 'sponsorluk',
-    label: '// SPONSORLUK VE ORGANİZASYON',
+    label: '// SPONSORLUK VE ORGANİZASYON DEPARTMANI',
     subUnits: [
       {
         label: 'Sponsorluk Birimi',
