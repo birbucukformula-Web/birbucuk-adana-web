@@ -117,6 +117,7 @@ const departments = [
   {
     id: 'guvenlik',
     label: '// 1.5 ADANA FORMULA CAT DEPARTMENT',
+    motto: 'Job description is simple: be cute, boost morale, eat treats.',
     captains: [
       { name: 'Anı', role: '1.5 Adana Formula Cat Captain (Mother of Cats)', photo: 'ani.jpeg', linkedin: '#', description: 'The most senior and patient of the department. No meeting is considered official without her.', shortDesc: '👑 Team Leader' },
     ],
@@ -198,6 +199,12 @@ export default function EkipUyeleriEng() {
               <div className="eu-dept-header">
                 <span>{dept.label}</span>
               </div>
+              
+              {dept.motto && (
+                <div className="eu-dept-motto">
+                  {dept.motto}
+                </div>
+              )}
               
               {dept.captains && (
                 <div className="eu-members-grid" style={{ marginBottom: '32px' }}>

@@ -117,6 +117,7 @@ const departments = [
   {
     id: 'guvenlik',
     label: '// 1.5 ADANA FORMULA KEDİ DEPARTMANI',
+    motto: 'Görev tanımı basit: sevimli olmak, moral yükseltmek, mama yemek.',
     captains: [
       { name: 'Anı', role: '1.5 Adana Formula Kedi Kaptanı (Anne Kedi)', photo: 'ani.jpeg', linkedin: '#', description: 'Departmanın en kıdemlisi, en sabırlısı. O olmadan hiçbir toplantı resmi sayılmaz.', shortDesc: '👑 Ekip Lideri' },
     ],
@@ -198,6 +199,12 @@ export default function EkipUyeleri() {
               <div className="eu-dept-header">
                 <span>{dept.label}</span>
               </div>
+              
+              {dept.motto && (
+                <div className="eu-dept-motto">
+                  {dept.motto}
+                </div>
+              )}
               
               {dept.captains && (
                 <div className="eu-members-grid" style={{ marginBottom: '32px' }}>

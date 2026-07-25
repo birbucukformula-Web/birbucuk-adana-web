@@ -51,6 +51,18 @@
   letter-spacing: 2px;
 }
 
+.eu-dept-motto {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--accent);
+  opacity: 0.75;
+  text-align: center;
+  margin-top: -16px;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+}
+
 /* GRID */
 .eu-members-grid {
   display: flex;
