@@ -1,9 +1,9 @@
 {
-  "name": "birbuçuk-adana-formula-student",
+  "name": "birbucuk-adana-web",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://birbucukformula-web.github.io/Deneme-bolgesi",
+  "homepage": "https://birbucukadanaformula.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
