@@ -27,6 +27,168 @@
   background: linear-gradient(to top, rgba(10,10,10,0.5) 0%, transparent 60%);
   pointer-events: none;
 }
+
+/* --- GAME PLACEHOLDER STYLES --- */
+
+/* Varsayılan olarak placeholder gizlidir */
+.game-placeholder-content {
+  display: none;
+}
+
+/* Görsel yüklenemediğinde çalışacak stil */
+.game-media.is-placeholder {
+  min-height: 480px;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Yarış stili hafif kareli ızgara deseni */
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.game-media.is-placeholder .game-placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  z-index: 2;
+}
+
+/* Araç İkonu ve Efekti */
+.placeholder-icon {
+  color: var(--accent);
+  margin-bottom: 20px;
+  padding: 16px 24px; /* Yandan araca uygun yatay genişlik */
+  background: rgba(227, 6, 19, 0.08);
+  border: 1px solid rgba(227, 6, 19, 0.3);
+  border-radius: 40px; /* Tam daire yerine şık bir pill/oval görünüm */
+  box-shadow: 0 0 30px rgba(227, 6, 19, 0.2);
+  animation: pulseGlow 2.5s infinite ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-icon svg {
+  transform: rotate(0deg); /* Düz, yere basan duruş */
+  transition: transform 0.3s ease;
+}
+
+.placeholder-icon:hover svg {
+  transform: scale(1.08) translateX(3px); /* Üzerine gelince hafif sağa (ileri) ivmelensin */
+} 
+
+.placeholder-tag {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.placeholder-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.placeholder-desc {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+}
+
+/* Hafif Işık Yansıma Animasyonu */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 25px rgba(227, 6, 19, 0.15);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 45px rgba(227, 6, 19, 0.35);
+  }
+}
+
+/* --- PÜRÜZSÜZ AKAN F1 YÜKLENİYOR ALANI --- */
+
+.track-loading-container {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 70px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+/* F1 Aracı - Çok Hafif Mikro Süspansiyon Titreşimli */
+.f1-car-track {
+  position: relative;
+  width: 140px;
+  height: auto;
+  color: var(--accent);
+  z-index: 3;
+  margin-bottom: -5px; /* Tekerlekleri asfalta sıfırlar */
+  filter: none;
+  /* Çooook hafif mikro zıplama (-0.3px) */
+  animation: f1MicroBounce 0.22s infinite alternate ease-in-out;
+}
+
+/* Asfalt Taban Çizgisi */
+.track-road {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+/* Sakin Akan Yol Çizgileri */
+.track-lines {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 2px;
+  background-image: linear-gradient(
+    90deg, 
+    rgba(227, 6, 19, 0.5) 0%, rgba(227, 6, 19, 0.5) 40%, 
+    transparent 40%, transparent 100%
+  );
+  background-size: 70px 100%;
+  z-index: 2;
+  animation: trackSlowFlow 1.2s infinite linear;
+}
+
+/* ── ANİMASYONLAR ── */
+
+/* Gözü rahatsız etmeyen mikron düzeyde dikey süspansiyon hareketi */
+@keyframes f1MicroBounce {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-0.3px); }
+}
+
+@keyframes trackSlowFlow {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-70px); }
+}
+
 /* Brackets */
 .gb { position: absolute; width: 28px; height: 28px; }
 .gb-tl { top: 16px;  left: 16px;  border-top: 2px solid var(--accent); border-left:  2px solid var(--accent); }
@@ -77,4 +239,124 @@
 @media (max-width: 600px) {
   .store-buttons { flex-direction: column; }
   .store-btn { min-width: unset; width: 100%; }
+}
+
+.cad-placeholder-content {
+  display: none;
+}
+
+/* --- MONTAJ / BİRLEŞEN F1 ARACI STİLLERİ --- */
+
+.season-main-img.is-assembly-placeholder {
+  position: relative;
+  min-height: 380px;
+  background: #0a0a0a;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  /* Şık, çok hafif kareli tasarım */
+  background-image: 
+    linear-gradient(rgba(227, 6, 19, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(227, 6, 19, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.assembly-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  z-index: 2;
+}
+
+.assembly-car-wrapper {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.f1-assembly-svg {
+  width: 180px;
+  height: auto;
+  color: var(--accent);
+  filter: drop-shadow(0 0 10px rgba(227, 6, 19, 0.4));
+}
+
+/* --- PARÇA BİRLEŞME ANİMASYONLARI --- */
+
+/* Arka Kanat: Soldan Kayarak Gelir */
+.part-back {
+  animation: assembleFromLeft 6s infinite ease-in-out;
+}
+
+.part-front {
+  animation: assembleFromRight 6s infinite ease-in-out;
+}
+
+.part-body {
+  animation: assembleFromTop 6s infinite ease-in-out;
+}
+
+.part-wheels {
+  animation: assembleFromBottom 6s infinite ease-in-out;
+}
+
+/* KEYFRAMES: (0%-30%: Dağınık, 45%-80%: Tam Birleşmiş, 100%: Tekrar Dağınık) */
+
+@keyframes assembleFromLeft {
+  0%   { transform: translateX(-50px); opacity: 0; }
+  20%  { transform: translateX(-50px); opacity: 0; }
+  35%, 80% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(-50px); opacity: 0; }
+}
+
+@keyframes assembleFromRight {
+  0%   { transform: translateX(50px); opacity: 0; }
+  20%  { transform: translateX(50px); opacity: 0; }
+  35%, 80% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(50px); opacity: 0; }
+}
+
+@keyframes assembleFromTop {
+  0%   { transform: translateY(-30px); opacity: 0; }
+  20%  { transform: translateY(-30px); opacity: 0; }
+  35%, 80% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-30px); opacity: 0; }
+}
+
+@keyframes assembleFromBottom {
+  0%   { transform: translateY(25px); opacity: 0; }
+  20%  { transform: translateY(25px); opacity: 0; }
+  35%, 80% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(25px); opacity: 0; }
+}
+
+/* METİNLER */
+.assembly-tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.assembly-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.assembly-desc {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
 }

@@ -192,3 +192,102 @@
     width: 100%;
   }
 }
+
+/* --- SADE VE AKICI MONTAJ (BİRLEŞEN) F1 ARACI STİLLERİ --- */
+.season-main-img.is-assembly-placeholder {
+  position: relative;
+  width: 100%;
+  min-height: 380px;
+  background: #0a0a0a;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  /* Teknik kareli ızgara deseni */
+  background-image: 
+    linear-gradient(rgba(227, 6, 19, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(227, 6, 19, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.assembly-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  z-index: 2;
+  width: 100%;
+}
+
+.assembly-car-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* F1 Aracı - Oyundakiyle Aynı Boyut ve SIFIR GÖLGE */
+.f1-assembly-svg {
+  width: 140px;
+  height: auto;
+  color: var(--accent);
+  filter: none !important; /* Gölge tamamen kaldırıldı */
+}
+
+/* ── PARÇA BİRLEŞME ANİMASYONLARI (6 Saniye Döngü) ── */
+.part-back   { animation: assembleFromLeft 6s infinite ease-in-out; }
+.part-front  { animation: assembleFromRight 6s infinite ease-in-out; }
+.part-body   { animation: assembleFromTop 6s infinite ease-in-out; }
+.part-wheels { animation: assembleFromBottom 6s infinite ease-in-out; }
+
+@keyframes assembleFromLeft {
+  0%   { transform: translateX(-40px); opacity: 0; }
+  25%, 80% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(-40px); opacity: 0; }
+}
+
+@keyframes assembleFromRight {
+  0%   { transform: translateX(40px); opacity: 0; }
+  25%, 80% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(40px); opacity: 0; }
+}
+
+@keyframes assembleFromTop {
+  0%   { transform: translateY(-25px); opacity: 0; }
+  25%, 80% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-25px); opacity: 0; }
+}
+
+@keyframes assembleFromBottom {
+  0%   { transform: translateY(20px); opacity: 0; }
+  25%, 80% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(20px); opacity: 0; }
+}
+
+/* ── METİN STİLLERİ ── */
+.assembly-tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.assembly-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.assembly-desc {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+}

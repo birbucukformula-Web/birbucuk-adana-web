@@ -12,10 +12,10 @@ const specs2025 = [
 
 // ─── YAPIM AŞAMASI FOTOĞRAFLARI ──────────────────────────────────────────────
 const buildPhotos2025 = [
-  { src: `${base}images/2025-arac-images/made-progress/0.JPG`, caption: 'Kaynak İşlemleri' },
-  { src: `${base}images/2025-arac-images/made-progress/1.JPG`, caption: 'Metal Kesim' },
-  { src: `${base}images/2025-arac-images/made-progress/2.JPG`, caption: 'Şasi Detay' },
-  { src: `${base}images/2025-arac-images/made-progress/3.JPG`, caption: 'Montaj Aşaması' },
+  { src: `${base}images/2025-arac-images/made-progress/2025-1.jpeg`, caption: 'Kaynak İşlemleri' },
+  { src: `${base}images/2025-arac-images/made-progress/2025-2.jpeg`, caption: 'Metal Kesim' },
+  { src: `${base}images/2025-arac-images/made-progress/2025-3.jpg`, caption: 'Şasi Detay' },
+  { src: `${base}images/2025-arac-images/made-progress/2025-4.jpg`, caption: 'Montaj Aşaması' },
 ]
 
 export default function Arac2025() {
@@ -28,7 +28,7 @@ export default function Arac2025() {
           </div>
 
           <div className="season-main-img reveal reveal-delay-1">
-            <img src={`${base}images/2025-arac-images/arac-buyuk.jpg`} alt="2024-2025 Sezonu Aracı" />
+            <img src={`${base}images/2025-arac-images/24-25-arac.jpeg`} alt="2024-2025 Sezonu Aracı" />
           </div>
 
           <div className="season-specs mt-48">

@@ -20,28 +20,61 @@ export default function Oyun() {
       </section>
 
       {/* OYUN GÖRSELİ */}
-      <section className="game-showcase">
-        <div className="container">
-          <div className="game-media reveal">
-            {/* EDIT: Oyun videosu veya ekran görüntüsü — /src/assets/images/oyun_screenshot.jpg */}
-            {/* EDIT: Video için aşağıdaki <video> etiketini kullan */}
-            {/*
-            <video autoPlay muted loop playsInline>
-              <source src="/src/assets/videos/gameplay.mp4" type="video/mp4" />
-            </video>
-            */}
-            <img
-              src="/src/assets/images/oyun_screenshot.jpg"
-              alt="Oyun ekran görüntüsü"
-              onError={e => { e.target.parentElement.classList.add('game-media-placeholder') }}
-            />
-            <div className="game-media-overlay" />
-            {/* Corner brackets */}
-            <div className="gb gb-tl" /><div className="gb gb-tr" />
-            <div className="gb gb-bl" /><div className="gb gb-br" />
-          </div>
-        </div>
-      </section>
+      {/* OYUN GÖRSELİ */}
+<section className="game-showcase">
+  <div className="container">
+    <div className="game-media reveal">
+      <img
+        src="/src/assets/images/oyun_screenshot.jpg"
+        alt="Oyun ekran görüntüsü"
+        onError={e => { 
+          e.target.style.display = 'none';
+          e.target.parentElement.classList.add('is-placeholder');
+        }}
+      />
+      
+      {/* Görsel olmadığı sürece ekranda görünecek dinamik yüklenme alanı */}
+      <div className="game-placeholder-content">
+       <div className="track-loading-container">
+  <div className="f1-car-track">
+    <svg viewBox="0 0 100 36" fill="currentColor">
+      {/* Arka Kanat (Solda) */}
+      <path d="M 4 8 L 18 8 L 15 22 L 4 22 Z" />
+      <path d="M 2 8 L 18 8" stroke="currentColor" strokeWidth="2" />
+      {/* Gövde / Sidepod / Kokpit / Halo / Burun */}
+      <path d="M 12 22 L 20 18 L 38 17 C 42 12, 52 12, 56 17 L 72 20 L 92 26 L 98 28 L 98 30 L 88 30 L 76 29 L 58 28 L 22 28 Z" />
+      {/* Halo & Sürücü Kafası */}
+      <path d="M 46 17 C 48 14, 54 14, 57 17 Z" fill="#0d0d0d" />
+      <circle cx="49" cy="15.5" r="1.8" />
+      {/* Ön Kanat (Sağda) */}
+      <path d="M 88 30 L 98 30 L 96 25 L 88 28 Z" />
+      <path d="M 88 31 L 100 31" stroke="currentColor" strokeWidth="1.5" />
+      
+      {/* Arka Tekerlek (Siyah İnce Çeperli) */}
+      <circle cx="26" cy="28" r="7.5" fill="currentColor" stroke="#0d0d0d" strokeWidth="1" />
+      <circle cx="26" cy="28" r="3" fill="#0d0d0d" />
+      
+      {/* Ön Tekerlek (Siyah İnce Çeperli) */}
+      <circle cx="78" cy="28" r="7.5" fill="currentColor" stroke="#0d0d0d" strokeWidth="1" />
+      <circle cx="78" cy="28" r="3" fill="#0d0d0d" />
+    </svg>
+  </div>
+  <div className="track-road" />
+  <div className="track-lines" />
+</div>
+
+        <span className="placeholder-tag">// PİST HAZIRLANIYOR</span>
+        <h3 className="placeholder-title">YAKINDA GELECEK</h3>
+        <p className="placeholder-desc">1.5 Adana Mobil Oyunu Yükleniyor...</p>
+      </div>
+
+      <div className="game-media-overlay" />
+      {/* Corner brackets */}
+      <div className="gb gb-tl" /><div className="gb gb-tr" />
+      <div className="gb gb-bl" /><div className="gb gb-br" />
+    </div>
+  </div>
+</section>
 
       {/* STORE BUTTONS */}
       <section className="store-section">

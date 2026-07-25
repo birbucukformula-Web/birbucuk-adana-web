@@ -42,8 +42,8 @@ export default function Hakkimizda() {
           </div>
           <div className="story-img reveal reveal-delay-2">
             <img
-              src={`${base}images/formula_students.jpg`}
-              alt="Takim calisma ani"
+              src={`${base}images/hakkimizda-images/biz-kimiz.JPG`}
+              alt="Takım çalışma anı"
               onError={e => { e.target.parentElement.classList.add('img-placeholder') }}
             />
             <div className="img-bracket img-bracket-tl" />
@@ -81,7 +81,11 @@ export default function Hakkimizda() {
           <div className="red-line reveal" />
           <div className="workshop-grid mt-32">
             <div className="workshop-img-wrapper reveal">
-              <img src={`${base}images/atolyemiz.jpg`} alt="Atolyemiz" className="workshop-main-img" />
+              <img
+                src={`${base}images/atolye.jpeg`}
+                alt="Atölyemiz"
+                className="workshop-main-img"
+              />
             </div>
             <div className="workshop-text reveal reveal-delay-2">
               <h2>Üretimin<br /><span className="text-red">Kalbi</span></h2>
