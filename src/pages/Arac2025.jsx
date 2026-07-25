@@ -28,7 +28,7 @@ export default function Arac2025() {
           </div>
 
           <div className="season-main-img reveal reveal-delay-1">
-            <img src={`${base}images/2025-arac-images/arac-buyuk.jpg`} alt="2024-2025 Sezonu Aracı" />
+            <img src={`${base}images/2025-arac-images/24-25-arac.jpeg`} alt="2024-2025 Sezonu Aracı" />
           </div>
 
           <div className="season-specs mt-48">
