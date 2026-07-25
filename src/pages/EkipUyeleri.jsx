@@ -139,9 +139,12 @@ function MemberCard({ name, role, photo, linkedin, isCaptain, description, short
           : <div className="eu-initials">{initials}</div>
         }
         {description && (
-          <div className="eu-photo-overlay">
-            <p>{description}</p>
-          </div>
+          <>
+            <div className="eu-desc-hint">i</div>
+            <div className="eu-photo-overlay">
+              <p>{description}</p>
+            </div>
+          </>
         )}
       </div>
       <div className="eu-info">
