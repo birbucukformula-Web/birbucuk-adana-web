@@ -20,6 +20,13 @@
             l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
+        
+        // Eski 'Deneme-bolgesi' uzantılı Google linklerini yeni domaine (kök dizine) yönlendir
+        if (window.location.pathname.includes('/Deneme-bolgesi')) {
+          var newPath = window.location.pathname.replace('/Deneme-bolgesi', '');
+          if (newPath === '') newPath = '/';
+          window.history.replaceState(null, null, newPath + window.location.search + window.location.hash);
+        }
       }(window.location))
     </script>
   </head>
