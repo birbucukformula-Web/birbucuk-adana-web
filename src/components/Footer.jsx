@@ -1,5 +1,7 @@
 // Footer bileşeni — sitenin alt kısmında logo, hızlı linkler ve sosyal medya ikonları
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { useLanguage } from '../contexts/LanguageContext'
 import './Footer.css'
 
 // Görseller public/images/ klasöründe olduğu için BASE_URL prefix kullanıyoruz
@@ -14,7 +16,7 @@ const socials = [
 ]
 
 // ─── HIZLI SAYFALAR ──────────────────────────────────────────────────────────
-const pages = [
+const pagesTR = [
   { to: '/',                  label: 'Ana Sayfa'       },
   { to: '/hakkimizda',        label: 'Hakkımızda'      },
   { to: '/araclarimiz',       label: 'Araçlarımız'     },
@@ -23,7 +25,20 @@ const pages = [
   { to: '/oyun',              label: 'Oyun'            },
 ]
 
+const pagesEN = [
+  { to: '/',                  label: 'Home'       },
+  { to: '/hakkimizda',        label: 'About Us'      },
+  { to: '/araclarimiz',       label: 'Our Vehicles'     },
+  { to: '/surdurulebilirlik', label: 'Sustainability'},
+  { to: '/sponsorlar',        label: 'Sponsors'      },
+  { to: '/oyun',              label: 'Game'            },
+]
+
 export default function Footer() {
+  const { language } = useLanguage();
+  const isEnglish = language === 'en';
+  const currentPages = isEnglish ? pagesEN : pagesTR;
+
   return (
     <footer className="footer">
       <div className="container footer-grid">
@@ -35,14 +50,16 @@ export default function Footer() {
             alt="Team Logo"
             style={{ height: '80px', width: 'auto', marginBottom: '16px' }}
           />
-          <p className="footer-tagline">Çukurova'nın Formula Student Takımı</p>
+          <p className="footer-tagline">
+            {isEnglish ? "Çukurova's Formula Student Team" : "Çukurova'nın Formula Student Takımı"}
+          </p>
         </div>
 
         {/* ── HIZLI LİNKLER ───────────────────────────────────────────────── */}
         <div className="footer-links">
-          <p className="footer-heading">Sayfalar</p>
+          <p className="footer-heading">{isEnglish ? "Pages" : "Sayfalar"}</p>
           <ul>
-            {pages.map(p => (
+            {currentPages.map(p => (
               <li key={p.to}><Link to={p.to}>{p.label}</Link></li>
             ))}
           </ul>
@@ -50,13 +67,15 @@ export default function Footer() {
 
         {/* ── İLETİŞİM VE SOSYAL MEDYA ───────────────────────────────────────── */}
         <div className="footer-contact">
-          <p className="footer-heading">İletişim</p>
+          <p className="footer-heading">{isEnglish ? "Contact" : "İletişim"}</p>
           <ul className="contact-info">
             <li>
               <Link to="/iletisim">
-                Çukurova Üniversitesi Tömer Binası,
-                <br />
-                Sarıçam/Adana
+                {isEnglish ? (
+                  <>Çukurova University Tömer Building,<br />Sarıçam/Adana</>
+                ) : (
+                  <>Çukurova Üniversitesi Tömer Binası,<br />Sarıçam/Adana</>
+                )}
               </Link>
             </li>
             <li className="footer-mail">
@@ -76,7 +95,9 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom container">
-        <p>© 2026 1.5 Adana Formula Student . Tüm hakları saklıdır.</p>
+        <p>
+          {isEnglish ? "© 2026 1.5 Adana Formula Student. All rights reserved." : "© 2026 1.5 Adana Formula Student. Tüm hakları saklıdır."}
+        </p>
       </div>
     </footer>
   )

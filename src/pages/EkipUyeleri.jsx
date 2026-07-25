@@ -135,9 +135,9 @@ const departments = [
   },
   {
     id: 'guvenlik',
-    label: '// 1.5 ADANA GÜVENLİK GÖREVLİSİ',
+    label: '// 1.5 ADANA FORMULA GÜVENLİK GÖREVLİSİ',
     members: [
-      { name: 'Anı', role: '1.5 Adana Güvenlik Görevlisi', photo: 'ani.jpeg', linkedin: '#' },
+      { name: 'Anı', role: '1.5 Adana Formula Güvenlik Görevlisi', photo: 'ani.jpeg', linkedin: '#' },
     ],
   },
 ]
