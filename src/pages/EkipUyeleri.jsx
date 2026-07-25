@@ -47,10 +47,6 @@ const departments = [
           { name: 'Kayra Kurt', role: 'Aerodinamik Birim Üyesi', photo: 'kayra_kurt.jpg', linkedin: 'https://www.linkedin.com/in/kayra-kurt-9572a6268' },
         ]
       },
-      {
-        label: 'Mekanik Kedisi',
-        members: [
-          { name: 'Mekanik Kedisi', role: 'Mekanik Güvenlik Görevlisi', photo: 'mekanik.jpeg', linkedin: '#' },
         ]
       }
     ]
@@ -61,7 +57,6 @@ const departments = [
     members: [
       { name: 'Demir Tuna Torun', role: 'Elektrik Kaptanı', photo: 'demir_torun.jpg', linkedin: 'https://www.linkedin.com/in/demir-torun-45a80a278' },
       { name: 'Muhammed Furkan Kutlu', role: 'Elektrik Birim Üyesi', photo: 'muhammed_furkan_kutlu.jpg', linkedin: 'https://www.linkedin.com/in/muhammed-furkan-kutlu-894532344' },
-      { name: 'Elektrik Kedisi', role: 'Elektrik Güvenlik Görevlisi', photo: 'elektrik.jpeg', linkedin: '#' },
     ],
   },
   {
@@ -87,12 +82,6 @@ const departments = [
         label: 'Embedded Birimi',
         members: [
           { name: 'Züleyha Nur Güneş', role: 'Embedded Birim Lideri', photo: 'zuleyha_nur_gules.jpg', linkedin: 'https://www.linkedin.com/in/z%C3%BCleyha-nur-g%C3%BCne%C5%9F-340561342' },
-        ]
-      },
-      {
-        label: 'Yazılım Kedisi',
-        members: [
-          { name: 'Yazılım Kedisi', role: 'Yazılım Güvenlik Görevlisi', photo: 'yazilim.jpeg', linkedin: '#' },
         ]
       }
     ]
@@ -124,20 +113,20 @@ const departments = [
         members: [
           { name: 'Emine Aden Taşkın', role: 'Medya Birim Üyesi', photo: 'aden_taskin.jpg', linkedin: 'https://www.linkedin.com/in/aden-ta%C5%9Fk%C4%B1n-542158408' },
         ]
-      },
-      {
-        label: 'B&O Kedisi',
-        members: [
-          { name: 'B&O Kedisi', role: 'B&O Güvenlik Görevlisi', photo: 'bando.jpeg', linkedin: '#' },
-        ]
       }
     ]
   },
   {
     id: 'guvenlik',
     label: '// 1.5 ADANA FORMULA KEDİ DEPARTMANI',
-    members: [
+    captains: [
       { name: 'Anı', role: '1.5 Adana Formula Kedi Kaptanı', photo: 'ani.jpeg', linkedin: '#' },
+    ],
+    members: [
+      { name: 'Mekanik Kedisi', role: 'Mekanik Güvenlik Görevlisi', photo: 'mekanik.jpeg', linkedin: '#' },
+      { name: 'Elektrik Kedisi', role: 'Elektrik Güvenlik Görevlisi', photo: 'elektrik.jpeg', linkedin: '#' },
+      { name: 'Yazılım Kedisi', role: 'Yazılım Güvenlik Görevlisi', photo: 'yazilim.jpeg', linkedin: '#' },
+      { name: 'B&O Kedisi', role: 'B&O Güvenlik Görevlisi', photo: 'bando.jpeg', linkedin: '#' },
     ],
   },
 ]

@@ -46,12 +46,6 @@ const departments = [
         members: [
           { name: 'Kayra Kurt', role: 'Aerodynamics Unit Member', photo: 'kayra_kurt.jpg', linkedin: 'https://www.linkedin.com/in/kayra-kurt-9572a6268' },
         ]
-      },
-      {
-        label: 'Mechanics Cat',
-        members: [
-          { name: 'Mechanics Cat', role: 'Mechanics Security Guard', photo: 'mekanik.jpeg', linkedin: '#' },
-        ],
       }
     ]
   },
@@ -61,7 +55,6 @@ const departments = [
     members: [
       { name: 'Demir Tuna Torun', role: 'Electronics Captain', photo: 'demir_torun.jpg', linkedin: 'https://www.linkedin.com/in/demir-torun-45a80a278' },
       { name: 'Muhammed Furkan Kutlu', role: 'Electronics Unit Member', photo: 'muhammed_furkan_kutlu.jpg', linkedin: 'https://www.linkedin.com/in/muhammed-furkan-kutlu-894532344' },
-      { name: 'Electronics Cat', role: 'Electronics Security Guard', photo: 'elektrik.jpeg', linkedin: '#' },
     ],
   },
   {
@@ -88,12 +81,6 @@ const departments = [
         members: [
           { name: 'Züleyha Nur Güneş', role: 'Embedded Unit Leader', photo: 'zuleyha_nur_gules.jpg', linkedin: 'https://www.linkedin.com/in/z%C3%BCleyha-nur-g%C3%BCne%C5%9F-340561342' },
         ]
-      },
-      {
-        label: 'Software Cat',
-        members: [
-          { name: 'Software Cat', role: 'Software Security Guard', photo: 'yazilim.jpeg', linkedin: '#' },
-        ],
       }
     ]
   },
@@ -124,20 +111,20 @@ const departments = [
         members: [
           { name: 'Emine Aden Taşkın', role: 'Media Unit Member', photo: 'aden_taskin.jpg', linkedin: 'https://www.linkedin.com/in/aden-ta%C5%9Fk%C4%B1n-542158408' },
         ]
-      },
-      {
-        label: 'Sponsorship & Org Cat',
-        members: [
-          { name: 'Sponsorship & Org Cat', role: 'Sponsorship & Org Security Guard', photo: 'bando.jpeg', linkedin: '#' },
-        ],
       }
     ]
   },
   {
     id: 'guvenlik',
     label: '// 1.5 ADANA FORMULA CAT DEPARTMENT',
-    members: [
+    captains: [
       { name: 'Anı', role: '1.5 Adana Formula Cat Captain', photo: 'ani.jpeg', linkedin: '#' },
+    ],
+    members: [
+      { name: 'Mechanics Cat', role: 'Mechanics Security Guard', photo: 'mekanik.jpeg', linkedin: '#' },
+      { name: 'Electronics Cat', role: 'Electronics Security Guard', photo: 'elektrik.jpeg', linkedin: '#' },
+      { name: 'Software Cat', role: 'Software Security Guard', photo: 'yazilim.jpeg', linkedin: '#' },
+      { name: 'Sponsorship & Org Cat', role: 'Sponsorship & Org Security Guard', photo: 'bando.jpeg', linkedin: '#' },
     ],
   },
 ]
