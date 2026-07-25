@@ -102,7 +102,7 @@ export default function Hakkimizda() {
             <div className="workshop-img-wrapper reveal">
               {/* EDIT: Atölye fotoğrafının yolunu buraya ekle */}
               <img
-                src={`${import.meta.env.BASE_URL}images/atolyemiz.jpg`}
+                src={`${import.meta.env.BASE_URL}images/atolye.jpeg`}
                 alt="Atölyemiz"
                 className="workshop-main-img"
               />
