@@ -13,14 +13,12 @@ export default function AraclarimizEng() {
             FROM PAST TO PRESENT<br /><span className="text-red">OUR VEHICLES</span>
           </h1>
           <p className="text-secondary mt-16 reveal reveal-delay-2" style={{ maxWidth: '600px' }}>
-            As the Çukurova University Formula Student team, we improve ourselves every year, 
-            making our vehicles that represent us on the tracks stronger and more innovative.
-            You can select the vehicle you want to examine in detail from below.
+            Welcome to our journey where we started with a dream and pushed the boundaries of engineering. In this story where the sweat poured in the workshop meets the speed on the tracks; that first bold step we took with BAF01-KOZA has today turned into a strong legacy we engraved on the asphalt with BAF02-METAMORF. With the inspiration we get from the past, we tighten every screw with more faith, and we gear up towards the future in every new season. You can examine these engineering masterpieces where we exceeded our own limits in detail below.
           </p>
           
           <div className="araclar-nav mt-32 reveal reveal-delay-3">
-            <Link to="/2026arac" className="btn-primary">OUR 2025-2026 VEHICLE →</Link>
-            <Link to="/2025arac" className="btn-outline">OUR 2024-2025 VEHICLE →</Link>
+            <Link to="/2026arac" className="btn-primary">BAF02-METAMORF →</Link>
+            <Link to="/2025arac" className="btn-outline">BAF01-KOZA →</Link>
           </div>
         </div>
       </section>

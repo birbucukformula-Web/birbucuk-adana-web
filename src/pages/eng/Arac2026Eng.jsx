@@ -27,7 +27,7 @@ export default function Arac2026Eng() {
       <section className="season-section">
         <div className="container">
           <div className="season-title-box reveal">
-            <h2>2025-2026 <span className="text-red">SEASON VEHICLE</span></h2>
+            <h2>BAF02-<span className="text-red">METAMORF</span></h2>
           </div>
           
 <div className="season-main-img is-assembly-placeholder reveal">
@@ -74,9 +74,24 @@ export default function Arac2026Eng() {
 
   </div>
 </div>
+
+          <div className="season-intro-text mt-32 reveal reveal-delay-2 text-secondary" style={{ maxWidth: '800px' }}>
+            <h3 className="text-white mb-16" style={{ fontSize: '1.5rem', letterSpacing: '1px' }}>WE ARE EVOLVING: LIGHTER, STRONGER, MORE AGGRESSIVE</h3>
+            <p style={{ lineHeight: '1.8' }}>
+              We left our mark on the asphalt with our first vehicle, and now we are coming to rewrite the rules of that asphalt. Every sound of metal rising from the workshop and every welding spark struck is a harbinger of a much faster future. As the 1.5 Adana Formula Student team, we are transforming all the experience and data we have gained from the past into pure speed in our 2025-2026 season vehicle. This new design, currently rising millimeter by millimeter on the assembly line, is counting the days to become the sharpest point our university's engineering vision has reached.
+            </p>
+          </div>
+
           <div className="season-specs mt-48">
             <p className="section-label reveal">// TECHNICAL SPECIFICATIONS</p>
             <div className="red-line reveal" />
+            
+            <div className="specs-intro-text mt-32 mb-32 reveal reveal-delay-1 text-secondary" style={{ maxWidth: '800px' }}>
+              <h3 className="text-white mb-16" style={{ fontSize: '1.5rem', letterSpacing: '1px' }}>AT THE LIMITS OF ENGINEERING: A 3.9-SECOND CLAIM</h3>
+              <p style={{ lineHeight: '1.8' }}>
+                When constructing our second vehicle, our only goal on the table was to exceed the limits. We completely optimized our chassis geometry, reducing our total weight to the ~230 kg range and upgrading our power unit to 80 kW. This renewed steel tubular space frame architecture, which maximizes cornering stability with its 1530 mm wheelbase, aims to reach from 0 to 100 kilometers per hour in just 3.9 seconds. These numbers are not just goals on paper; they are the mathematical proof of our new character challenging our rivals on the track.
+              </p>
+            </div>
             <div className="specs-grid reveal reveal-delay-1">
               {specs2026.map(s => (
                 <div key={s.key} className="spec-item card">
@@ -111,6 +126,13 @@ export default function Arac2026Eng() {
                 ))}
               </div>
             )}
+
+            <div className="build-outro-text mt-48 reveal reveal-delay-2 text-secondary" style={{ maxWidth: '800px' }}>
+              <h3 className="text-white mb-16" style={{ fontSize: '1.5rem', letterSpacing: '1px' }}>NO SLEEP IN THE WORKSHOP, ONLY THE GOAL</h3>
+              <p style={{ lineHeight: '1.8' }}>
+                Right now, time has stopped in our garage; there is only a team locked on the target. The eyes shining behind the welding masks witness every second of this challenging assembly phase where steel is shaped by fire. Metals cut with millimetric calculations are welded together with a belief in championship during shifts that last until morning. Very soon, the doors of this dark workshop will open, and that silent wait will be replaced by the high-pitched scream of our 80 kW electric motor. Get ready, here we come.
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -27,7 +27,7 @@ export default function Arac2026() {
       <section className="season-section">
         <div className="container">
           <div className="season-title-box reveal">
-            <h2>2025-2026 <span className="text-red">SEZONU ARACI</span></h2>
+            <h2>BAF02-<span className="text-red">METAMORF</span></h2>
           </div>
           
 <div className="season-main-img is-assembly-placeholder reveal">
@@ -74,9 +74,24 @@ export default function Arac2026() {
 
   </div>
 </div>
+
+          <div className="season-intro-text mt-32 reveal reveal-delay-2 text-secondary" style={{ maxWidth: '800px' }}>
+            <h3 className="text-white mb-16" style={{ fontSize: '1.5rem', letterSpacing: '1px' }}>EVRİM GEÇİRİYORUZ: DAHA HAFİF, DAHA GÜÇLÜ, DAHA AGRESİF</h3>
+            <p style={{ lineHeight: '1.8' }}>
+              İlk aracımızda asfalta imzamızı atmıştık, şimdi ise o asfaltın kurallarını yeniden yazmaya geliyoruz. Atölyeden yükselen her metal sesi ve çakılan her kaynak kıvılcımı, çok daha hızlı bir geleceğin habercisi. 1.5 Adana Formula Student ekibi olarak geçmişten aldığımız tüm tecrübeyi ve verileri, 2025-2026 sezonu aracımızda saf hıza dönüştürüyoruz. Şu an montaj hattında milim milim yükselen bu yeni tasarım, üniversitemizin mühendislik vizyonunun ulaştığı en keskin nokta olmak için gün sayıyor.
+            </p>
+          </div>
+
           <div className="season-specs mt-48">
             <p className="section-label reveal">// TEKNİK ÖZELLİKLER</p>
             <div className="red-line reveal" />
+            
+            <div className="specs-intro-text mt-32 mb-32 reveal reveal-delay-1 text-secondary" style={{ maxWidth: '800px' }}>
+              <h3 className="text-white mb-16" style={{ fontSize: '1.5rem', letterSpacing: '1px' }}>MÜHENDİSLİĞİN LİMİTLERİNDE: 3.9 SANİYELİK İDDİA</h3>
+              <p style={{ lineHeight: '1.8' }}>
+                İkinci aracımızı kurgularken masadaki tek hedefimiz limitleri aşmaktı. Şasi geometrimizi baştan aşağı optimize ederek toplam ağırlığımızı ~230 kg bandına çektik ve güç ünitemizi 80 kW'a yükselttik. 1530 mm'lik tekerlek tabanıyla viraj kararlılığını maksimuma çıkaran bu yenilenmiş çelik boru kafes mimarisi, 0'dan 100 kilometre hıza sadece 3.9 saniyede ulaşmayı hedefliyor. Bu rakamlar kağıt üzerinde birer hedeften ibaret değil; pistteki rakiplerimize meydan okuyan yeni karakterimizin matematiksel ispatıdır.
+              </p>
+            </div>
             <div className="specs-grid reveal reveal-delay-1">
               {specs2026.map(s => (
                 <div key={s.key} className="spec-item card">
@@ -111,6 +126,13 @@ export default function Arac2026() {
                 ))}
               </div>
             )}
+
+            <div className="build-outro-text mt-48 reveal reveal-delay-2 text-secondary" style={{ maxWidth: '800px' }}>
+              <h3 className="text-white mb-16" style={{ fontSize: '1.5rem', letterSpacing: '1px' }}>ATÖLYEDE UYKU YOK, HEDEF VAR</h3>
+              <p style={{ lineHeight: '1.8' }}>
+                Şu an garajımızda zaman durdu, sadece hedefe kilitlenmiş bir takım var. Kaynak maskelerinin ardında parlayan gözler, çeliğin ateşle şekillendiği bu zorlu montaj aşamasının her saniyesine şahitlik ediyor. Milimetrik hesaplarla kesilen metaller, sabahlara kadar süren mesailerde bir şampiyonluk inancıyla birbirine kaynatılıyor. Çok yakında bu karanlık atölyenin kapıları açılacak ve o sessiz bekleyiş, yerini 80 kW'lık elektrik motorumuzun tiz çığlığına bırakacak. Hazır olun, geliyoruz.
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -13,14 +13,12 @@ export default function Araclarimiz() {
             GEÇMİŞTEN GÜNÜMÜZE<br /><span className="text-red">ARAÇLARIMIZ</span>
           </h1>
           <p className="text-secondary mt-16 reveal reveal-delay-2" style={{ maxWidth: '600px' }}>
-            Çukurova Üniversitesi Formula Student ekibi olarak her yıl kendimizi geliştiriyor, 
-            pistlerde bizi temsil eden araçlarımızı daha güçlü ve yenilikçi hale getiriyoruz.
-            Detaylı incelemek istediğiniz aracı aşağıdan seçebilirsiniz.
+            Bir hayalden yola çıkıp, mühendisliğin sınırlarını zorladığımız serüvenimize hoş geldiniz. Atölyede dökülen terin, pistlerdeki hızla buluştuğu bu hikayede; BAF01-KOZA ile attığımız o ilk cesur adım, bugün BAF02-METAMORF ile asfalta kazıdığımız güçlü bir mirasa dönüştü. Geçmişten aldığımız ilhamla her vidayı daha inançla sıkıyor, her yeni sezonda geleceğe doğru vites büyütüyoruz. Kendi sınırlarımızı aştığımız bu mühendislik eserlerini aşağıdan detaylıca inceleyebilirsiniz.
           </p>
           
           <div className="araclar-nav mt-32 reveal reveal-delay-3">
-            <Link to="/2026arac" className="btn-primary">2025-2026 ARACIMIZ →</Link>
-            <Link to="/2025arac" className="btn-outline">2024-2025 ARACIMIZ →</Link>
+            <Link to="/2026arac" className="btn-primary">BAF02-METAMORF →</Link>
+            <Link to="/2025arac" className="btn-outline">BAF01-KOZA →</Link>
           </div>
         </div>
       </section>

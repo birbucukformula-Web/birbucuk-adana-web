@@ -57,7 +57,7 @@ export default function SurdurulebilirlikEng() {
             {/* SOL: KİTAP KAPAĞI */}
             <div className="handbook-img-box">
               <img 
-                src={`${base}images/el_kitabi_kapak.png`} 
+                src={`${base}docs/recycling-handbook.jpg`} 
                 alt="Recycling Handbook Cover" 
                 className="handbook-img"
               />
@@ -86,7 +86,7 @@ export default function SurdurulebilirlikEng() {
 
               <div className="mt-24">
                 <a 
-                  href={`${base}docs/15AdanaFormula_GeriDonusumElKitabi.pdf`} 
+                  href={`${base}docs/recycling-handbook.jpg`} 
                   download 
                   target="_blank" 
                   rel="noopener noreferrer" 
