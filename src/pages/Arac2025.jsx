@@ -14,8 +14,8 @@ const specs2025 = [
 const buildPhotos2025 = [
   { src: `${base}images/2025-arac-images/made-progress/2025-1.jpeg`, caption: 'Kaynak İşlemleri' },
   { src: `${base}images/2025-arac-images/made-progress/2025-2.jpeg`, caption: 'Metal Kesim' },
-  { src: `${base}images/2025-arac-images/made-progress/2025-3.jpg`, caption: 'Şasi Detay' },
-  { src: `${base}images/2025-arac-images/made-progress/2025-4.jpg`, caption: 'Montaj Aşaması' },
+  { src: `${base}images/2025-arac-images/made-progress/2025-4.jpg`, caption: 'Şasi Detay' },
+  { src: `${base}images/2025-arac-images/made-progress/2025-3.jpg`, caption: 'Montaj Aşaması' },
 ]
 
 export default function Arac2025() {
