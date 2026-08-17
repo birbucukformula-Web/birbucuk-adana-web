@@ -10,13 +10,6 @@ const specs2025 = [
   { key: 'Güç',            value: '60 kW' },
 ]
 
-// ─── YAPIM AŞAMASI FOTOĞRAFLARI ──────────────────────────────────────────────
-const buildPhotos2025 = [
-  { src: `${base}images/2025-arac-images/made-progress/2025-1.jpeg`, caption: 'Kaynak İşlemleri' },
-  { src: `${base}images/2025-arac-images/made-progress/2025-2.jpeg`, caption: 'Metal Kesim' },
-  { src: `${base}images/2025-arac-images/made-progress/2025-4.jpg`, caption: 'Şasi Detay' },
-  { src: `${base}images/2025-arac-images/made-progress/2025-3.jpg`, caption: 'Montaj Aşaması' },
-]
 
 export default function Arac2025() {
   return (
@@ -59,28 +52,7 @@ export default function Arac2025() {
             </div>
           </div>
 
-          <div className="season-build mt-48">
-            <p className="section-label reveal">// YAPIM AŞAMASI</p>
-            <div className="red-line reveal" />
-            
-            {buildPhotos2025.length ? (
-              <div className="build-grid mt-32">
-                {buildPhotos2025.slice(0, 4).map((p, i) => (
-                  <div key={i} className="build-item reveal" style={{ transitionDelay: `${i * 0.08}s` }}>
-                    <img src={p.src} alt={p.caption} loading="lazy" />
-                    <p className="build-caption">{p.caption}</p>
-                  </div>
-                ))}
-              </div>
-            ) : null}
 
-            <div className="build-outro-text mt-48 reveal reveal-delay-2 text-secondary" style={{ maxWidth: '800px' }}>
-              <h3 className="text-white mb-16" style={{ fontSize: '1.5rem', letterSpacing: '1px' }}>KAĞIT ÜZERİNDEN PİSTLERE...</h3>
-              <p style={{ lineHeight: '1.8' }}>
-                Tasarım ekranlarındaki çizgilerin atölyede kıvılcımlara, ardından piste çıkan bir yarış aracına dönüşmesi aylar süren bir emeğin eseri. Metal kesiminden şasi montajına kadar her aşamada kendi sınırlarımızı zorladık, hatalarımızdan öğrendik ve mühendislik yeteneklerimizi bizzat sahada test ettik. İlk aracımız bize neleri başarabileceğimizi gösteren en büyük rehberimiz oldu. Şimdi bu tecrübeyi cebimize koyuyor, Çukurova Üniversitesi'nin adını motor sporlarında çok daha güçlü duyurmak için aracımızın temellerini atıyoruz.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
     </div>

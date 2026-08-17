@@ -12,15 +12,6 @@ const specs2026 = [
   { key: 'Tekerlek Tabanı', value: '1530 mm' },
 ]
 
-// ─── YAPIM AŞAMASI FOTOĞRAFLARI ──────────────────────────────────────────────
-// 2025-2026 Sezonu Yapım aşaması fotoğrafları (Henüz yok)
-const buildPhotos2026 = [ 
-  { src: `${base}images/2025-arac-images/made-progress/0.JPG`, caption: 'Kaynak İşlemleri' },
-  { src: `${base}images/2025-arac-images/made-progress/1.JPG`, caption: 'Metal Kesim' },
-  { src: `${base}images/2025-arac-images/made-progress/2.JPG`, caption: 'Şasi Detay' },
-  { src: `${base}images/2025-arac-images/made-progress/3.JPG`, caption: 'Montaj Aşaması' },
-]
-
 export default function Arac2026() {
   return (
     <div style={{ paddingTop: '80px' }}>
@@ -102,38 +93,6 @@ export default function Arac2026() {
             </div>
           </div>
 
-          <div className="season-build mt-48">
-            <p className="section-label reveal">// YAPIM AŞAMASI</p>
-            <div className="red-line reveal" />
-            
-            {buildPhotos2026.length ? (
-              <div className="build-grid">
-                {buildPhotos2026.map((p, i) => (
-                  <div key={i} className="build-item reveal" style={{ transitionDelay: `${i * 0.08}s` }}>
-                    <img src={p.src} alt={p.caption} loading="lazy" />
-                    <p className="build-caption">{p.caption}</p>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="build-grid">
-                {/* 4 adet placeholder kutusu */}
-                {[1, 2, 3, 4].map((item) => (
-                  <div key={item} className="build-placeholder-box reveal">
-                    <span className="placeholder-icon">📸</span>
-                    <p>Görsel Yakında<br/>Eklenecek</p>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            <div className="build-outro-text mt-48 reveal reveal-delay-2 text-secondary" style={{ maxWidth: '800px' }}>
-              <h3 className="text-white mb-16" style={{ fontSize: '1.5rem', letterSpacing: '1px' }}>ATÖLYEDE UYKU YOK, HEDEF VAR</h3>
-              <p style={{ lineHeight: '1.8' }}>
-                Şu an garajımızda zaman durdu, sadece hedefe kilitlenmiş bir takım var. Kaynak maskelerinin ardında parlayan gözler, çeliğin ateşle şekillendiği bu zorlu montaj aşamasının her saniyesine şahitlik ediyor. Milimetrik hesaplarla kesilen metaller, sabahlara kadar süren mesailerde bir şampiyonluk inancıyla birbirine kaynatılıyor. Çok yakında bu karanlık atölyenin kapıları açılacak ve o sessiz bekleyiş, yerini 80 kW'lık elektrik motorumuzun tiz çığlığına bırakacak. Hazır olun, geliyoruz.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
     </div>

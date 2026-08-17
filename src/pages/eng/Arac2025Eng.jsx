@@ -10,13 +10,6 @@ const specs2025 = [
   { key: 'Power',            value: '60 kW' },
 ]
 
-// ─── YAPIM AŞAMASI FOTOĞRAFLARI ──────────────────────────────────────────────
-const buildPhotos2025 = [
-  { src: `${base}images/2025-arac-images/made-progress/2025-1.jpeg`, caption: 'Welding Process' },
-  { src: `${base}images/2025-arac-images/made-progress/2025-2.jpeg`, caption: 'Metal Cutting' },
-  { src: `${base}images/2025-arac-images/made-progress/2025-4.jpg`, caption: 'Chassis Detail' },
-  { src: `${base}images/2025-arac-images/made-progress/2025-3.jpg`, caption: 'Assembly Phase' },
-]
 
 export default function Arac2025Eng() {
   return (
@@ -59,28 +52,7 @@ export default function Arac2025Eng() {
             </div>
           </div>
 
-          <div className="season-build mt-48">
-            <p className="section-label reveal">// BUILD PROCESS</p>
-            <div className="red-line reveal" />
-            
-            {buildPhotos2025.length ? (
-              <div className="build-grid mt-32">
-                {buildPhotos2025.slice(0, 4).map((p, i) => (
-                  <div key={i} className="build-item reveal" style={{ transitionDelay: `${i * 0.08}s` }}>
-                    <img src={p.src} alt={p.caption} loading="lazy" />
-                    <p className="build-caption">{p.caption}</p>
-                  </div>
-                ))}
-              </div>
-            ) : null}
 
-            <div className="build-outro-text mt-48 reveal reveal-delay-2 text-secondary" style={{ maxWidth: '800px' }}>
-              <h3 className="text-white mb-16" style={{ fontSize: '1.5rem', letterSpacing: '1px' }}>FROM PAPER TO THE TRACKS...</h3>
-              <p style={{ lineHeight: '1.8' }}>
-                The transformation of lines on design screens into sparks in the workshop, and then into a race car hitting the track, is the result of months of effort. From metal cutting to chassis assembly, we pushed our own limits at every stage, learned from our mistakes, and tested our engineering skills right in the field. Our first vehicle became our greatest guide, showing us what we can achieve. Now, we are putting this experience in our pocket and laying the foundations of our vehicle to make the name of Çukurova University heard much stronger in motorsports.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
     </div>

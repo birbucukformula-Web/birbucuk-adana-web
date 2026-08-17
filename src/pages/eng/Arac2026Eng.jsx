@@ -12,15 +12,6 @@ const specs2026 = [
   { key: 'Wheelbase', value: '1530 mm' },
 ]
 
-// ─── YAPIM AŞAMASI FOTOĞRAFLARI ──────────────────────────────────────────────
-// 2025-2026 Sezonu Yapım aşaması fotoğrafları (Henüz yok)
-const buildPhotos2026 = [ 
-  { src: `${base}images/2025-arac-images/made-progress/0.JPG`, caption: 'Welding Process' },
-  { src: `${base}images/2025-arac-images/made-progress/1.JPG`, caption: 'Metal Cutting' },
-  { src: `${base}images/2025-arac-images/made-progress/2.JPG`, caption: 'Chassis Detail' },
-  { src: `${base}images/2025-arac-images/made-progress/3.JPG`, caption: 'Assembly Phase' },
-]
-
 export default function Arac2026Eng() {
   return (
     <div style={{ paddingTop: '80px' }}>
@@ -102,38 +93,6 @@ export default function Arac2026Eng() {
             </div>
           </div>
 
-          <div className="season-build mt-48">
-            <p className="section-label reveal">// BUILD PROCESS</p>
-            <div className="red-line reveal" />
-            
-            {buildPhotos2026.length ? (
-              <div className="build-grid">
-                {buildPhotos2026.map((p, i) => (
-                  <div key={i} className="build-item reveal" style={{ transitionDelay: `${i * 0.08}s` }}>
-                    <img src={p.src} alt={p.caption} loading="lazy" />
-                    <p className="build-caption">{p.caption}</p>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="build-grid">
-                {/* 4 adet placeholder kutusu */}
-                {[1, 2, 3, 4].map((item) => (
-                  <div key={item} className="build-placeholder-box reveal">
-                    <span className="placeholder-icon">📸</span>
-                    <p>Image Coming<br/>Soon</p>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            <div className="build-outro-text mt-48 reveal reveal-delay-2 text-secondary" style={{ maxWidth: '800px' }}>
-              <h3 className="text-white mb-16" style={{ fontSize: '1.5rem', letterSpacing: '1px' }}>NO SLEEP IN THE WORKSHOP, ONLY THE GOAL</h3>
-              <p style={{ lineHeight: '1.8' }}>
-                Right now, time has stopped in our garage; there is only a team locked on the target. The eyes shining behind the welding masks witness every second of this challenging assembly phase where steel is shaped by fire. Metals cut with millimetric calculations are welded together with a belief in championship during shifts that last until morning. Very soon, the doors of this dark workshop will open, and that silent wait will be replaced by the high-pitched scream of our 80 kW electric motor. Get ready, here we come.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
     </div>
