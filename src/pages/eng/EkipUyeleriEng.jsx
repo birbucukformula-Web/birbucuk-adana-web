@@ -38,13 +38,14 @@ const departments = [
         label: 'Vehicle Dynamics Unit',
         members: [
           { name: 'Emir Mert Akar', role: 'Vehicle Dynamics Unit Leader', photo: 'emir_mert_akar.jpg', linkedin: 'https://www.linkedin.com/in/emir-mert-akar-a81450253' },
-          { name: 'Ceren Sude Tatar', role: 'Vehicle Dynamics Unit Member', photo: 'ceren_sude_tatar.jpg', linkedin: 'https://www.linkedin.com/in/ceren-sude-tatar-9846173b5' },
+
         ]
       },
       {
         label: 'Aerodynamics Unit',
         members: [
           { name: 'Kayra Kurt', role: 'Aerodynamics Unit Leader', photo: 'kayra_kurt.jpg', linkedin: 'https://www.linkedin.com/in/kayra-kurt-9572a6268' },
+          { name: 'Ceren Sude Tatar', role: 'Aerodynamics Unit Member', photo: 'ceren_sude_tatar.jpg', linkedin: 'https://www.linkedin.com/in/ceren-sude-tatar-9846173b5' },
         ]
       }
     ]
